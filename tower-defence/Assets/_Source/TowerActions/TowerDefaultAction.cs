@@ -19,6 +19,11 @@ namespace TowerActions
             sliderHP.maxValue = _hp;
             sliderHP.value = _hp;
         }
+
+        public void SetDamage(float damage)
+        {
+            
+        }
         protected virtual void OnMouseEnter()
         {
             sliderHP.gameObject.SetActive(true);
