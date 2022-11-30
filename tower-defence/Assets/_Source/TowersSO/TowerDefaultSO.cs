@@ -2,7 +2,8 @@
 
 namespace TowersSO
 {
-    public class Tower : ScriptableObject
+    [CreateAssetMenu(fileName = "TowerDefaultSO", menuName = "ScriptableObjects/TowerDefaultSO", order = 1)]
+    public class TowerDefaultSO : ScriptableObject
     {
         public GameObject TowerPrefab;
         public float HP;

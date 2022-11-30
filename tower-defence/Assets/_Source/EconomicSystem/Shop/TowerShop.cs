@@ -11,7 +11,7 @@ namespace EconomicSystem
         [SerializeField] private TowerPositionChooser towerPositionChooser;
         [SerializeField] private LayerMask placedLayer;
 
-        private Tower _buyingTower;
+        private TowerDefaultSO _buyingTower;
 
         public void BuyMine()
         {

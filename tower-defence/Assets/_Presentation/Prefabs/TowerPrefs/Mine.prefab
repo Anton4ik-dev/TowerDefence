@@ -111,9 +111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d5b5a98bad4d2947afa32e0132591bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mineSO: {fileID: 11400000, guid: 1b703573abc3f8748b475126ee106256, type: 2}
-  oilAdderButton: {fileID: 7438231254721838151}
+  towerSO: {fileID: 11400000, guid: 1b703573abc3f8748b475126ee106256, type: 2}
   sliderHP: {fileID: 3152405670320083035}
+  oilAdderButton: {fileID: 7438231254721838151}
 --- !u!1 &502591694309550847
 GameObject:
   m_ObjectHideFlags: 0

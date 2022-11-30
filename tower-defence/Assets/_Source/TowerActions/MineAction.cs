@@ -5,19 +5,16 @@ using UnityEngine.UI;
 
 namespace TowerActions
 {
-    public class MineAction : MonoBehaviour
+    public class MineAction : TowerDefaultAction
     {
-        [SerializeField] private MineSO mineSO;
         [SerializeField] private GameObject oilAdderButton;
-        [SerializeField] private Slider sliderHP;
 
         private float _extractionTime;
-        private float _hp;
-
+        private MineSO mineSO;
         private void Start()
         {
+            mineSO = (MineSO)towerSO;
             SetExtractionTimer();
-            SetHP();
         }
         public void AddOil()
         {
@@ -28,11 +25,6 @@ namespace TowerActions
         private void SetExtractionTimer()
         {
             _extractionTime = mineSO.ExtractionTime;
-        }
-        private void SetHP()
-        {
-            _hp = mineSO.HP;
-            sliderHP.maxValue = _hp;
         }
         private void EnableTimer()
         {
@@ -50,15 +42,6 @@ namespace TowerActions
                 _extractionTime -= Time.deltaTime;
             else
                 DisableTimer();
-        }
-        private void OnMouseEnter()
-        {
-            sliderHP.gameObject.SetActive(true);
-            sliderHP.value = _hp;
-        }
-        private void OnMouseExit()
-        {
-            sliderHP.gameObject.SetActive(false);
         }
     }
 }
