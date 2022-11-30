@@ -10,7 +10,7 @@ namespace EconomicSystem
         [SerializeField] private LayerMask placedLayer;
         [SerializeField] private Material activeMaterial;
         [SerializeField] private Material baseMaterial;
-        [SerializeField] private Material placedMaterial;
+        [SerializeField] private Material placedMaterial;   
         public void HighlightCells()
         {
             for (int i = 0; i < cellRenderers.Count; i++)

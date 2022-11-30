@@ -1,23 +1,27 @@
-using TowersSO;
+using TowerSystem.TowersSO;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace TowerActions
+namespace TowerSystem.TowerActions
 {
     public class TowerDefaultAction : MonoBehaviour
     {
         [SerializeField] protected TowerDefaultSO towerSO;
         [SerializeField] private Slider sliderHP;
         private float _hp;
-        private void Awake()
+        public void GetDamage(float damage)
         {
-            SetHP();
+            _hp -= damage;
         }
         private void SetHP()
         {
             _hp = towerSO.HP;
             sliderHP.maxValue = _hp;
             sliderHP.value = _hp;
+        }
+        private void Awake()
+        {
+            SetHP();
         }
         protected virtual void OnMouseEnter()
         {

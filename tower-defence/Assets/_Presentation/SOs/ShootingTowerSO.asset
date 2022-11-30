@@ -19,3 +19,8 @@ MonoBehaviour:
   Cost: 10
   FireRate: 20
   Damage: 10
+  Radious: 0
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  bulletPrefab: {fileID: 0}

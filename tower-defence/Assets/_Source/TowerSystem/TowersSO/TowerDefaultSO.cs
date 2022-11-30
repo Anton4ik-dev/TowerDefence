@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 
-namespace TowersSO
+namespace TowerSystem.TowersSO
 {
     [CreateAssetMenu(fileName = "TowerDefaultSO", menuName = "ScriptableObjects/TowerDefaultSO", order = 1)]
     public class TowerDefaultSO : ScriptableObject
     {
-        public GameObject TowerPrefab;
+        [Header("Stats")]
         public float HP;
-        public ResourceType ResourceForBuy;
         public int Cost;
+
+        [Header("OtherInfo")]
+        public GameObject TowerPrefab;
+        public ResourceType ResourceForBuy;
+
     }
 }

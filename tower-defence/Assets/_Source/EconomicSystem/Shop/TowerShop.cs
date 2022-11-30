@@ -1,4 +1,5 @@
-using TowersSO;
+using Services;
+using TowerSystem.TowersSO;
 using UnityEngine;
 
 namespace EconomicSystem
@@ -35,7 +36,7 @@ namespace EconomicSystem
         }
         private void TowerPurchaseConfirm(GameObject cell)
         {
-            TowerSpawner.SpawnTower(cell, _buyingTower.TowerPrefab, placedLayer);
+            SpawnerService.SpawnTower(cell, _buyingTower.TowerPrefab, placedLayer);
             DisableShop();
         }
         public void BuyTower(GameObject cell)

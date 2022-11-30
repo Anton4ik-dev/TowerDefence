@@ -1,11 +1,17 @@
+using BattleSystem;
 using UnityEngine;
 
-namespace TowersSO
+namespace TowerSystem.TowersSO
 {
     [CreateAssetMenu(fileName = "ShootingTowerSO", menuName = "ScriptableObjects/ShootingTowerSO", order = 1)]
     public class ShootingTowerSO : TowerDefaultSO
     {
+        [Header("Stats")]
         public float FireRate;
-        public float Damage;
+        public float Radious;
+
+        [Header("OtherInfo")]
+        public LayerMask EnemyLayer;
+        public GameObject BulletPrefab;
     }
 }

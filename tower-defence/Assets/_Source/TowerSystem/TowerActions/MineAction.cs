@@ -1,30 +1,24 @@
 using EconomicSystem;
-using TowersSO;
+using TowerSystem.TowersSO;
 using UnityEngine;
 
-namespace TowerActions
+namespace TowerSystem.TowerActions
 {
     public class MineAction : TowerDefaultAction
     {
         [SerializeField] private GameObject oilAdderButton;
 
         private float _extractionTime;
-        private MineSO mineSO;
-
-        private void Start()
-        {
-            mineSO = (MineSO)towerSO;
-            SetExtractionTimer();
-        }
+        private MineSO _mineSO;
         public void AddOil()
         {
             EnableTimer();
-            ResourceService.OnAddResource?.Invoke(mineSO.MinedAmount, mineSO.MinedResource);
+            ResourceService.OnAddResource?.Invoke(_mineSO.MinedAmount, _mineSO.MinedResource);
             SetExtractionTimer();
         }
         private void SetExtractionTimer()
         {
-            _extractionTime = mineSO.ExtractionTime;
+            _extractionTime = _mineSO.ExtractionTime;
         }
         private void EnableTimer()
         {
@@ -35,6 +29,11 @@ namespace TowerActions
         {
             oilAdderButton.SetActive(true);
             enabled = false;
+        }
+        private void Start()
+        {
+            _mineSO = (MineSO)towerSO;
+            SetExtractionTimer();
         }
         private void Update()
         {

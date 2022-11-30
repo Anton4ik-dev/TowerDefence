@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace TowerActions
+namespace TowerSystem.TowerActions
 {
     public class BaseAction : TowerDefaultAction
     {
