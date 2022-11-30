@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e126e29b67c70ab4fa35a44627c46b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cellsRenderers:
+  cellRenderers:
   - {fileID: 6697585179507834214}
   - {fileID: 2161543274433975729}
   - {fileID: 2161543274366690329}
@@ -321,6 +321,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3208012493792074782}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3901001504173913815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1920224966279768777, guid: 642654257e4517645a7542c61a5c7a74,
+    type: 3}
+  m_PrefabInstance: {fileID: 3208012493792074782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7697142210828777240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3901001504173913815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a813d83ec86104dbf63c9052ac89eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerSO: {fileID: 11400000, guid: f63515c4f67f792458ed4b6911f2d32e, type: 2}
+  sliderHP: {fileID: 0}
 --- !u!1001 &6697585178357857551
 PrefabInstance:
   m_ObjectHideFlags: 0

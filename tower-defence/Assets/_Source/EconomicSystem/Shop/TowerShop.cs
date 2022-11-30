@@ -33,7 +33,7 @@ namespace EconomicSystem
             towerPositionChooser.enabled = false;
             cellsView.UnHighlightCells();
         }
-        private void TowerPurchaseConfirming(GameObject cell)
+        private void TowerPurchaseConfirm(GameObject cell)
         {
             TowerSpawner.SpawnTower(cell, _buyingTower.TowerPrefab, placedLayer);
             DisableShop();
@@ -41,7 +41,7 @@ namespace EconomicSystem
         public void BuyTower(GameObject cell)
         {
             if (ResourceService.OnTakeResource.Invoke(_buyingTower.Cost, _buyingTower.ResourceForBuy))
-                TowerPurchaseConfirming(cell);
+                TowerPurchaseConfirm(cell);
             else
                 DisableShop();
         }

@@ -2,27 +2,31 @@ using TowersSO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TowerDefaultAction : MonoBehaviour
+namespace TowerActions
 {
-    [SerializeField] protected TowerDefaultSO towerSO;
-    [SerializeField] protected Slider sliderHP;
-    protected float _hp;
-    private void Awake()
+    public class TowerDefaultAction : MonoBehaviour
     {
-        SetHP();
-    }
-    private void SetHP()
-    {
-        _hp = towerSO.HP;
-        sliderHP.maxValue = _hp;
-    }
-    private void OnMouseEnter()
-    {
-        sliderHP.gameObject.SetActive(true);
-        sliderHP.value = _hp;
-    }
-    private void OnMouseExit()
-    {
-        sliderHP.gameObject.SetActive(false);
+        [SerializeField] protected TowerDefaultSO towerSO;
+        [SerializeField] private Slider sliderHP;
+        private float _hp;
+        private void Awake()
+        {
+            SetHP();
+        }
+        private void SetHP()
+        {
+            _hp = towerSO.HP;
+            sliderHP.maxValue = _hp;
+            sliderHP.value = _hp;
+        }
+        protected virtual void OnMouseEnter()
+        {
+            sliderHP.gameObject.SetActive(true);
+            sliderHP.value = _hp;
+        }
+        protected virtual void OnMouseExit()
+        {
+            sliderHP.gameObject.SetActive(false);
+        }
     }
 }

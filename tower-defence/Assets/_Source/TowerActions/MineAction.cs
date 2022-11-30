@@ -1,7 +1,6 @@
 using EconomicSystem;
 using TowersSO;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace TowerActions
 {
@@ -11,6 +10,7 @@ namespace TowerActions
 
         private float _extractionTime;
         private MineSO mineSO;
+
         private void Start()
         {
             mineSO = (MineSO)towerSO;

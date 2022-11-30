@@ -6,10 +6,6 @@ namespace EconomicSystem
     {
         [SerializeField] private LayerMask activeLayer;
         [SerializeField] private TowerShop towerShop;
-        private void Start()
-        {
-            enabled = false;
-        }
         private void Update()
         {
             if (Input.GetMouseButtonDown(0))

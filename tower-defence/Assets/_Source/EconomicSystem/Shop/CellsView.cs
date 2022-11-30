@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +5,7 @@ namespace EconomicSystem
 {
     public class CellsView : MonoBehaviour
     {
-        [SerializeField] private List<MeshRenderer> cellsRenderers;
+        [SerializeField] private List<MeshRenderer> cellRenderers;
         [SerializeField] private LayerMask activeLayer;
         [SerializeField] private LayerMask placedLayer;
         [SerializeField] private Material activeMaterial;
@@ -14,19 +13,19 @@ namespace EconomicSystem
         [SerializeField] private Material placedMaterial;
         public void HighlightCells()
         {
-            for (int i = 0; i < cellsRenderers.Count; i++)
+            for (int i = 0; i < cellRenderers.Count; i++)
             {
-                if ((activeLayer & 1 << cellsRenderers[i].gameObject.layer) == 1 << cellsRenderers[i].gameObject.layer)
-                    cellsRenderers[i].material = activeMaterial;
-                else if ((placedLayer & 1 << cellsRenderers[i].gameObject.layer) == 1 << cellsRenderers[i].gameObject.layer)
-                    cellsRenderers[i].material = placedMaterial;
+                if ((activeLayer & 1 << cellRenderers[i].gameObject.layer) == 1 << cellRenderers[i].gameObject.layer)
+                    cellRenderers[i].material = activeMaterial;
+                else if ((placedLayer & 1 << cellRenderers[i].gameObject.layer) == 1 << cellRenderers[i].gameObject.layer)
+                    cellRenderers[i].material = placedMaterial;
             }
         }
         public void UnHighlightCells()
         {
-            for (int i = 0; i < cellsRenderers.Count; i++)
+            for (int i = 0; i < cellRenderers.Count; i++)
             {
-                cellsRenderers[i].material = baseMaterial;
+                cellRenderers[i].material = baseMaterial;
             }
         }
     }
