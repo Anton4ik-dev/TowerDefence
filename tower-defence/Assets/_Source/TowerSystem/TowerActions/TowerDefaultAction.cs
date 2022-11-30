@@ -23,6 +23,11 @@ namespace TowerSystem.TowerActions
         {
             SetHP();
         }
+
+        public void Damage(float damage)
+        {
+            Debug.Log(damage);
+        }
         protected virtual void OnMouseEnter()
         {
             sliderHP.gameObject.SetActive(true);
