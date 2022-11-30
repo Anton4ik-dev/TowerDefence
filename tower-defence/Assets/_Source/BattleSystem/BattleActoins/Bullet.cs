@@ -1,4 +1,5 @@
 using BattleSystem.BattleSO;
+using TowerSystem.TowerActions;
 using UnityEngine;
 
 namespace BattleSystem.BattleActions
@@ -7,10 +8,12 @@ namespace BattleSystem.BattleActions
     {
         [SerializeField] private Rigidbody rb;
         [SerializeField] private BulletSO bulletSO;
+        private ShootingTowerAction _tower;
         private GameObject _target;
         private int _enemyLayer;
-        public void PutTarget(GameObject target, int enemyLayer)
+        public void PutTarget(ShootingTowerAction tower, GameObject target, int enemyLayer)
         {
+            _tower = tower;
             _target = target;
             _enemyLayer = enemyLayer;
         }
@@ -23,6 +26,8 @@ namespace BattleSystem.BattleActions
             if(collision.gameObject.layer == _enemyLayer)
             {
                 //damage enemy
+                _tower.UpdateNearestEnemy();
+                Destroy(gameObject);
             }
         }
     }
