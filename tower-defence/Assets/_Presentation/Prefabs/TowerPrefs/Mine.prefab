@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1308089679616457738}
   - component: {fileID: 1772544629887734179}
   - component: {fileID: 7943836076981432131}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Mine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 8884379377105840792}
   - component: {fileID: 2054488525357982992}
   - component: {fileID: 2001323562994937639}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,8 +200,8 @@ GameObject:
   m_Component:
   - component: {fileID: 302801343558631639}
   - component: {fileID: 3152405670320083035}
-  m_Layer: 3
-  m_Name: Slider
+  m_Layer: 0
+  m_Name: MineSliderHP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6287104160641562574}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 1695229970842038473}
   - component: {fileID: 7744962116822756881}
   - component: {fileID: 2189568539144435457}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: MineCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 8868668748530929691}
   - component: {fileID: 1633808969199161258}
   - component: {fileID: 196195026458035602}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 2595113844334765913}
   - component: {fileID: 9036325748406284823}
   - component: {fileID: 9065896893094663868}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,8 +642,8 @@ GameObject:
   - component: {fileID: 6767663120123530046}
   - component: {fileID: 7210474542244326997}
   - component: {fileID: 4151348038121214333}
-  m_Layer: 3
-  m_Name: Collect
+  m_Layer: 0
+  m_Name: CollectButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
