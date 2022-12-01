@@ -10,22 +10,33 @@ namespace TowerSystem.TowerActions
     {
         [SerializeField] private Transform firePoint;
         private ShootingTowerSO _shootingTowerSO;
-        private List<Collider> _enemiesQueue;
+        private List<GameObject> _enemiesQueue;
         private GameObject _target = null;
 
         private int _layerMask;
         private float _fireCountdown;
 
-        //call this method on triggerEnter and TriggerExit
-        public void UpdateNearestEnemy()
+        //call this method on triggerEnter
+        public void AddEnemy(GameObject enemy)
         {
-            var colliders = Physics.OverlapSphere(transform.position, _shootingTowerSO.Radious, _layerMask);
-            _enemiesQueue = colliders.OrderBy(enemy => (transform.position - enemy.transform.position).sqrMagnitude).ToList();
-            if(_enemiesQueue.Count == 0)
+            _enemiesQueue.Add(enemy);
+            UpdateNearestEnemy();
+        }
+        //call this method on TriggerExit
+        public void RemoveEnemy(GameObject enemy)
+        {
+            if(_enemiesQueue.Contains(enemy))
+                _enemiesQueue.Remove(enemy);
+            UpdateNearestEnemy();
+        }
+        private void UpdateNearestEnemy()
+        {
+            if (_enemiesQueue.Count == 0)
             {
                 _target = null;
                 return;
             }
+            _enemiesQueue = _enemiesQueue.OrderBy(enemy => (transform.position - enemy.transform.position).sqrMagnitude).ToList();
             _target = _enemiesQueue[0].gameObject;
         }
         private void CheckShot()
@@ -43,7 +54,7 @@ namespace TowerSystem.TowerActions
         private void Start()
         {
             _shootingTowerSO = (ShootingTowerSO)towerSO;
-            _enemiesQueue = new List<Collider>();
+            _enemiesQueue = new List<GameObject>();
             _layerMask = 1 << (int)Mathf.Log(_shootingTowerSO.EnemyLayer.value, 2);
         }
         private void Update()

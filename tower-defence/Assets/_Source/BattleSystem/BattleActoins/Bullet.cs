@@ -26,7 +26,7 @@ namespace BattleSystem.BattleActions
             if(collision.gameObject.layer == _enemyLayer)
             {
                 //damage enemy
-                _tower.UpdateNearestEnemy();
+                _tower.RemoveEnemy(collision.gameObject);
                 Destroy(gameObject);
             }
         }
