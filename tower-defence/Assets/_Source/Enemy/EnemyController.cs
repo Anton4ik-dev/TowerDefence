@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using _Source.Enemy.EnemySO;
 using _Source.Enemy.EnemyStates;
+using BattleSystem.BattleActions;
 using TowerSystem.TowerActions;
 using UnityEngine;
 
@@ -28,13 +29,14 @@ namespace _Source.Enemy
             _pull = pull;
         }
 
-        public void GetDamage(float damage)
+        public void GetDamage(float damage, Bullet bullet)
         {
             _currentHp -= damage;
             if (_currentHp <= 0)
             {
-                KillEnemy();
+                KillEnemy(bullet.tower);
             }
+            bullet.target = null;
         }
 
         public void StopAttack()
@@ -43,9 +45,10 @@ namespace _Source.Enemy
             _stateMachine.SwitchStateMoving();
         }
 
-        public void KillEnemy()
+        public void KillEnemy(ShootingTowerAction tower)
         {
             StopAttack();
+            tower.RemoveEnemy(gameObject);
             this.gameObject.SetActive(false);
             _pull.MoveEnemyToPull(this.gameObject);
         }

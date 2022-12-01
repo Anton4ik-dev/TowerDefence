@@ -346,7 +346,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3439731352629099638}
   - component: {fileID: 7043407943768734488}
-  m_Layer: 0
+  - component: {fileID: 2036185773932377446}
+  m_Layer: 3
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,8 +362,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5033433131504176029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.17, z: 0.94}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.17, z: 0.92077}
+  m_LocalScale: {x: 0.98155946, y: 0.98155946, z: 0.98155946}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2159983449654322962}
@@ -381,6 +382,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.93314683
   m_Center: {x: 0, y: 0, z: -1.0395527}
+--- !u!114 &2036185773932377446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5033433131504176029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e076ac5b9a3a144880cb559f35a4ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower: {fileID: 6029957889977618788}
+  mask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &5336993696314864452
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,7 +584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1906852930257160159}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -17,8 +17,8 @@ MonoBehaviour:
   TowerPrefab: {fileID: 2159983449654322966, guid: 9144a67cf528eb948b6f43d807fb9f89,
     type: 3}
   ResourceForBuy: 0
-  FireRate: 20
-  Radious: 0
+  FireRate: 1
+  Radious: 10
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128

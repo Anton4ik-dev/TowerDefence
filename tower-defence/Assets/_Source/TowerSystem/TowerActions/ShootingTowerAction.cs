@@ -13,19 +13,18 @@ namespace TowerSystem.TowerActions
         private List<GameObject> _enemiesQueue;
         private GameObject _target = null;
 
-        private int _layerMask;
+        //private int _layerMask;
         private float _fireCountdown;
 
-        //call this method on triggerEnter
         public void AddEnemy(GameObject enemy)
         {
-            _enemiesQueue.Add(enemy);
+            if(!_enemiesQueue.Contains(enemy))
+                _enemiesQueue.Add(enemy);
             UpdateNearestEnemy();
         }
-        //call this method on TriggerExit
         public void RemoveEnemy(GameObject enemy)
         {
-            if(_enemiesQueue.Contains(enemy))
+            if (_enemiesQueue.Contains(enemy))
                 _enemiesQueue.Remove(enemy);
             UpdateNearestEnemy();
         }
@@ -49,14 +48,13 @@ namespace TowerSystem.TowerActions
         }
         private void Shoot()
         {
-            Debug.Log("Shoot");
-            SpawnerService.SpawnBullet(this, _shootingTowerSO.BulletPrefab, firePoint.position, _target, _layerMask);
+            SpawnerService.SpawnBullet(this, _shootingTowerSO.BulletPrefab, firePoint.position, _target.transform, _shootingTowerSO.EnemyLayer);
         }
         private void Start()
         {
             _shootingTowerSO = (ShootingTowerSO)towerSO;
             _enemiesQueue = new List<GameObject>();
-            _layerMask = 1 << (int)Mathf.Log(_shootingTowerSO.EnemyLayer.value, 2);
+            //_layerMask = 1 << (int)Mathf.Log(_shootingTowerSO.EnemyLayer.value, 2);
         }
         private void Update()
         {
