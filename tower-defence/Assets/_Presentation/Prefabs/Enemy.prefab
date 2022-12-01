@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 335954038301691303}
   - component: {fileID: 335954038301691302}
   - component: {fileID: 335954038301691296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,4 +147,4 @@ MonoBehaviour:
   vectorMoving: {x: 0, y: 0, z: -1}
   layerTower:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64

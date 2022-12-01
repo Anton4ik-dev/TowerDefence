@@ -1,28 +1,53 @@
 using System;
 using System.Collections;
 using _Source.Enemy.EnemySO;
+using _Source.Enemy.EnemyStates;
 using TowerSystem.TowerActions;
 using UnityEngine;
 
 namespace _Source.Enemy
 {
-    public class EnemyController : MonoBehaviour
+    public class EnemyController : MonoBehaviour, IBaseEnemyAction
     {
         [SerializeField] private TypeEnemySo typeEnemy;
         [SerializeField] private Vector3 vectorMoving;
         [SerializeField] private LayerMask layerTower;
         private EnemyStateMachine _stateMachine;
         private bool _isMoving = true;
+        private float _currentHp;
+        private EnemyPull _pull;
 
         private void Awake()
         {
             _stateMachine = new EnemyStateMachine(GetComponent<Rigidbody>(), typeEnemy, vectorMoving);
+            _currentHp = typeEnemy.hp;
+        }
+
+        public void SetEnemyPull(EnemyPull pull)
+        {
+            _pull = pull;
+        }
+
+        public void GetDamage(float damage)
+        {
+            _currentHp -= damage;
+            if (_currentHp <= 0)
+            {
+                KillEnemy();
+            }
         }
 
         public void StopAttack()
         {
             _isMoving = true;
             _stateMachine.SwitchStateMoving();
+        }
+
+        public void KillEnemy()
+        {
+            StopAttack();
+            this.gameObject.SetActive(false);
+            _pull.MoveEnemyToPull(this.gameObject);
         }
 
         private void OnTriggerEnter(Collider other)

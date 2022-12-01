@@ -1,3 +1,5 @@
+using _Source.Enemy;
+using _Source.Enemy.EnemyStates;
 using BattleSystem.BattleSO;
 using TowerSystem.TowerActions;
 using UnityEngine;
@@ -25,7 +27,7 @@ namespace BattleSystem.BattleActions
         {
             if(collision.gameObject.layer == _enemyLayer)
             {
-                //damage enemy
+                collision.gameObject.GetComponent<EnemyController>().GetDamage(bulletSO.Damage);
                 _tower.RemoveEnemy(collision.gameObject);
                 Destroy(gameObject);
             }

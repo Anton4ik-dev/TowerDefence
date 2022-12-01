@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="" />
+    <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/BaseEnemyAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/BaseEnemyAction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/SOs/EnemySo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/SOs/EnemySo.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/SOs/ShootingTowerSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/SOs/ShootingTowerSO.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Enemy_Valera.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Enemy_Valera.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemySO/TypeEnemySo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemySO/TypeEnemySo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStates/StateAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStates/StateAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/ShootingTowerAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/ShootingTowerAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/TowerDefaultAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/TowerDefaultAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,23 +38,24 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IGR1EV39ixEiz7Q667KgROhjPv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.13f1/Unity.app/Contents/MacOS/Unity" />
@@ -76,14 +95,27 @@
       <option name="presentableId" value="Default" />
       <updated>1669805719664</updated>
       <workItem from="1669805727969" duration="16642000" />
+      <workItem from="1669892120036" duration="9160000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

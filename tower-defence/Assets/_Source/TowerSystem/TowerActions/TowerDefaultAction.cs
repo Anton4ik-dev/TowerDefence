@@ -12,6 +12,7 @@ namespace TowerSystem.TowerActions
         public void GetDamage(float damage)
         {
             _hp -= damage;
+            sliderHP.value = _hp;
         }
         private void SetHP()
         {
@@ -22,11 +23,6 @@ namespace TowerSystem.TowerActions
         private void Awake()
         {
             SetHP();
-        }
-
-        public void Damage(float damage)
-        {
-            Debug.Log(damage);
         }
         protected virtual void OnMouseEnter()
         {

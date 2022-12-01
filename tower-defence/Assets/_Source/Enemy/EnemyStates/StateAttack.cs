@@ -20,7 +20,7 @@ namespace _Source.Enemy.EnemyStates
 
         public void Update()
         {
-            _target.Damage(_damage);
+            if(_target != null)_target.GetDamage(_damage);
         }
 
         public void Exit()

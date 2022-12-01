@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daae9fed795142a40821656a25647baa, type: 3}
   m_Name: ShootingTowerSO
   m_EditorClassIdentifier: 
+  HP: 100
+  Cost: 10
   TowerPrefab: {fileID: 2159983449654322966, guid: 9144a67cf528eb948b6f43d807fb9f89,
     type: 3}
-  HP: 100
   ResourceForBuy: 0
-  Cost: 10
   FireRate: 20
-  Damage: 10
   Radious: 0
-  enemyLayer:
+  EnemyLayer:
     serializedVersion: 2
-    m_Bits: 0
-  bulletPrefab: {fileID: 0}
+    m_Bits: 128
+  BulletPrefab: {fileID: 8108379932431986831, guid: 140bfbd8f345e32498edde8939772807,
+    type: 3}

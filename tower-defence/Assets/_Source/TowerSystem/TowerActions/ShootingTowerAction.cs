@@ -49,6 +49,7 @@ namespace TowerSystem.TowerActions
         }
         private void Shoot()
         {
+            Debug.Log("Shoot");
             SpawnerService.SpawnBullet(this, _shootingTowerSO.BulletPrefab, firePoint.position, _target, _layerMask);
         }
         private void Start()
