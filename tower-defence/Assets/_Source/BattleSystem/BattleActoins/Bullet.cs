@@ -10,8 +10,8 @@ namespace BattleSystem.BattleActions
         [SerializeField] private BulletSO bulletSO;
         private ShootingTowerAction _tower;
         private Transform _target;
-        private LayerMask _enemyLayer;
-        public void PutTarget(ShootingTowerAction tower, Transform target, LayerMask enemyLayer)
+        private int _enemyLayer;
+        public void PutTarget(ShootingTowerAction tower, Transform target, int enemyLayer)
         {
             _tower = tower;
             _target = target;
@@ -19,17 +19,18 @@ namespace BattleSystem.BattleActions
         }
         private void Update()
         {
+            if(!_target.gameObject.activeSelf)
+                gameObject.SetActive(false);
+
             Vector3 dir = _target.position - transform.position;
             float distanceThisFrame = bulletSO.Speed * Time.deltaTime;
             transform.Translate(dir.normalized * distanceThisFrame, Space.World);
         }
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider other)
         {
-            if ((_enemyLayer & 1 << collision.gameObject.layer) == 1 << collision.gameObject.layer)
+            if (_enemyLayer == other.gameObject.layer)
             {
-                collision.gameObject.GetComponent<EnemyController>().GetDamage(bulletSO.Damage);
-                if (!_target.gameObject.activeSelf)
-                    _tower.RemoveEnemy(_target.gameObject);
+                other.gameObject.GetComponent<EnemyController>().GetDamage(bulletSO.Damage);
                 gameObject.SetActive(false);
             }
         }

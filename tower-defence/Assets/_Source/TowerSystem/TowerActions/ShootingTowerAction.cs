@@ -15,7 +15,7 @@ namespace TowerSystem.TowerActions
         private List<GameObject> _enemiesQueue;
         private GameObject _target = null;
 
-        //private int _layerMask;
+        private int _layerMask;
         private float _fireCountdown;
 
         public void AddEnemy(GameObject enemy)
@@ -54,22 +54,24 @@ namespace TowerSystem.TowerActions
         }
         private void Shoot()
         {
-            SpawnerService.SpawnBullet(this, _shootingTowerSO.BulletPrefab, firePoint.position, _target.transform, _shootingTowerSO.EnemyLayer);
+            SpawnerService.SpawnBullet(this, _shootingTowerSO.BulletPrefab, firePoint.position, _target.transform, _layerMask);
         }
         private void Start()
         {
             _shootingTowerSO = (ShootingTowerSO)towerSO;
             _enemiesQueue = new List<GameObject>();
-            towerTrigger.Initialize(this, _shootingTowerSO.EnemyLayer);
-            //_layerMask = 1 << (int)Mathf.Log(_shootingTowerSO.EnemyLayer.value, 2);
+            _layerMask = (int)Mathf.Log(_shootingTowerSO.EnemyLayer.value, 2);
+            towerTrigger.Initialize(this, _layerMask);
         }
         private void Update()
         {
-            if (_target != null)
+            if (_target != null && _target.gameObject.activeSelf)
             {
                 CheckShot();
                 _fireCountdown -= Time.deltaTime;
             }
+            else
+                RemoveEnemy(_target);
         }
     }
 }

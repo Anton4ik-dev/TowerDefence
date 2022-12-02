@@ -10,14 +10,23 @@ namespace EconomicSystem
         [SerializeField] private LayerMask placedLayer;
         [SerializeField] private Material activeMaterial;
         [SerializeField] private Material baseMaterial;
-        [SerializeField] private Material placedMaterial;   
+        [SerializeField] private Material placedMaterial;
+
+        private int _activeLayerNum;
+        private int _placedLayerNum;
+
+        private void Start()
+        {
+            _activeLayerNum = (int)Mathf.Log(activeLayer.value, 2);
+            _placedLayerNum = (int)Mathf.Log(placedLayer.value, 2);
+        }
         public void HighlightCells()
         {
             for (int i = 0; i < cellRenderers.Count; i++)
             {
-                if ((activeLayer & 1 << cellRenderers[i].gameObject.layer) == 1 << cellRenderers[i].gameObject.layer)
+                if (_activeLayerNum == cellRenderers[i].gameObject.layer)
                     cellRenderers[i].material = activeMaterial;
-                else if ((placedLayer & 1 << cellRenderers[i].gameObject.layer) == 1 << cellRenderers[i].gameObject.layer)
+                else if (_placedLayerNum == cellRenderers[i].gameObject.layer)
                     cellRenderers[i].material = placedMaterial;
             }
         }

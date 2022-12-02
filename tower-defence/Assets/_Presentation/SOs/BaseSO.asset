@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aded98ad08981544b90c18071a326bb, type: 3}
   m_Name: BaseSO
   m_EditorClassIdentifier: 
+  HP: 100
+  Cost: 0
   TowerPrefab: {fileID: 1920224966279768777, guid: 642654257e4517645a7542c61a5c7a74,
     type: 3}
-  HP: 100
   ResourceForBuy: 0
-  Cost: 0
+  layerAfterTowerDestroy:
+    serializedVersion: 2
+    m_Bits: 8

@@ -7,7 +7,6 @@ namespace TowerSystem.TowersSO
     {
         [Header("Stats")]
         public float FireRate;
-        public float Radious;
 
         [Header("OtherInfo")]
         public LayerMask EnemyLayer;

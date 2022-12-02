@@ -1,25 +1,27 @@
-using TowerSystem.TowerActions;
 using UnityEngine;
 
-public class ShootingTowerTrigger : MonoBehaviour
+namespace TowerSystem.TowerActions
 {
-    private ShootingTowerAction _tower;
-    private LayerMask _mask;
-    public void Initialize(ShootingTowerAction tower, LayerMask mask)
+    public class ShootingTowerTrigger : MonoBehaviour
     {
-        _tower = tower;
-        _mask = mask;
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if ((_mask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+        private ShootingTowerAction _tower;
+        private int _layerMask;
+        public void Initialize(ShootingTowerAction tower, int mask)
         {
-            _tower.AddEnemy(other.gameObject);
+            _tower = tower;
+            _layerMask = mask;
         }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if ((_mask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
-            _tower.RemoveEnemy(other.gameObject);
+        private void OnTriggerEnter(Collider other)
+        {
+            if (_layerMask == other.gameObject.layer)
+            {
+                _tower.AddEnemy(other.gameObject);
+            }
+        }
+        private void OnTriggerExit(Collider other)
+        {
+            if (_layerMask == other.gameObject.layer)
+                _tower.RemoveEnemy(other.gameObject);
+        }
     }
 }
