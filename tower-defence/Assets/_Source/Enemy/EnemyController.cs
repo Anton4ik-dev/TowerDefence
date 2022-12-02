@@ -10,9 +10,11 @@ namespace _Source.Enemy
 {
     public class EnemyController : MonoBehaviour, IBaseEnemyAction
     {
+        [SerializeField] private GameObject coinPrefab;
         [SerializeField] private TypeEnemySo typeEnemy;
         [SerializeField] private Vector3 vectorMoving;
         [SerializeField] private LayerMask layerTower;
+        [SerializeField] private LayerMask layerBase;
         private EnemyStateMachine _stateMachine;
         private bool _isMoving = true;
         private float _currentHp;
@@ -48,6 +50,7 @@ namespace _Source.Enemy
         {
             StopAttack();
             gameObject.SetActive(false);
+            Instantiate(coinPrefab, transform.position, Quaternion.identity);
             _pull.MoveEnemyToPull(gameObject);
         }
 
@@ -57,6 +60,12 @@ namespace _Source.Enemy
             if ((layerTower & 1 << obj.layer) == 1 << obj.layer)
             {
                 StopMoving(obj.GetComponent<TowerDefaultAction>());
+            }
+
+            if ((layerBase & 1 << obj.layer) == 1 << obj.layer)
+            {
+                obj.GetComponent<TowerDefaultAction>().GetDamage(typeEnemy.damageForBase);
+                KillEnemy();
             }
         }
 

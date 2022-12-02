@@ -15,19 +15,23 @@ namespace _Source.Enemy.EnemyStates
             _activeEnemies = new List<GameObject>();
         }
 
-        public bool ActivateEnemy(Transform position)
+        public bool CheckEnemy()
         {
             if (_enemiesInPull.Count != 0)
             {
-                var enemy = _enemiesInPull[0];
-                _activeEnemies.Add(enemy);
-                _enemiesInPull.Remove(enemy);
-                enemy.transform.position = position.position + Vector3.up;
-                enemy.SetActive(true);
                 return true;
             }
 
             return false;
+        }
+
+        public void ActivateEnemy(Transform pos)
+        {
+            var enemy = _enemiesInPull[0];
+            _activeEnemies.Add(enemy);
+            _enemiesInPull.Remove(enemy);
+            enemy.transform.position = pos.position + Vector3.up;
+            enemy.SetActive(true);
         }
 
         public void AddNewEnemyInPull(GameObject enemy)

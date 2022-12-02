@@ -1,3 +1,4 @@
+using _Source.Enemy.EnemyStates;
 using TowerSystem.TowersSO;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,12 +17,16 @@ namespace TowerSystem.TowerActions
             SetMaxHP();
             _cell = cell;
         }
-        public void GetDamage(float damage)
+        public bool GetDamage(float damage)
         {
             _hp -= damage;
             SetHP();
             if (_hp <= 0)
+            {
                 DestroyTower();
+                return true;
+            }
+            return false;
         }
         private void SetHP()
         {

@@ -14,7 +14,7 @@ namespace _Source.Enemy
 
         public EnemyStateMachine(Rigidbody body, TypeEnemySo parameters, Vector3 vectorMoving)
         {
-            var stateAttack = CreatorEnemyState.CreateStateAttack(parameters.damage);
+            var stateAttack = CreatorEnemyState.CreateStateAttack(parameters.damage, body.GetComponent<EnemyController>());
             var stateMoving = CreatorEnemyState.CreateStateMoving(body, parameters.speedMove, vectorMoving);
             _states = new Dictionary<Type, IStateEnemy>();
             _states.Add(typeof(StateAttack), stateAttack);
