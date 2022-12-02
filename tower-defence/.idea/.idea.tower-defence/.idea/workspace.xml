@@ -5,22 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/BaseEnemyAction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/BaseEnemyAction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/SOs/EnemySo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/SOs/EnemySo.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/SOs/ShootingTowerSO.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/SOs/ShootingTowerSO.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Enemy_Valera.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/Enemy_Valera.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemySO/TypeEnemySo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemySO/TypeEnemySo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStates/CreatorEnemyState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStates/CreatorEnemyState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStates/StateAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyStates/StateAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/ShootingTowerAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/ShootingTowerAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/TowerDefaultAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/TowerDefaultAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/EconomicSystem/Coin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/ShootingTowerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../by-place_protorype/by-place/Assets/_Source/Moving Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -96,6 +92,7 @@
       <updated>1669805719664</updated>
       <workItem from="1669805727969" duration="16642000" />
       <workItem from="1669892120036" duration="9160000" />
+      <workItem from="1669986393317" duration="6472000" />
     </task>
     <servers />
   </component>
