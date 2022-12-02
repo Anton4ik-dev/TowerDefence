@@ -500,7 +500,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1157,16 +1157,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6918562025575398586, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -834.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918562025575398586, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 182.56
+      objectReference: {fileID: 0}
     - target: {fileID: 6918562025575398587, guid: 01f1a7e6b3676074f9339dc89ec60750,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1604298216}
+    - target: {fileID: 6918562025804060076, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -834.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918562025804060076, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 378.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918562025997364636, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -834.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918562025997364636, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 277.07
+      objectReference: {fileID: 0}
     - target: {fileID: 6918562025997364637, guid: 01f1a7e6b3676074f9339dc89ec60750,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1604298216}
+    - target: {fileID: 6918562027167435003, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -837
+      objectReference: {fileID: 0}
+    - target: {fileID: 6918562027167435003, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 486.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
 --- !u!1001 &9125456855710006294
