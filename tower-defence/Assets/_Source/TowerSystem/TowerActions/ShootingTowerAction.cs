@@ -9,6 +9,8 @@ namespace TowerSystem.TowerActions
     public class ShootingTowerAction : TowerDefaultAction
     {
         [SerializeField] private Transform firePoint;
+        [SerializeField] private ShootingTowerTrigger towerTrigger;
+
         private ShootingTowerSO _shootingTowerSO;
         private List<GameObject> _enemiesQueue;
         private GameObject _target = null;
@@ -19,14 +21,18 @@ namespace TowerSystem.TowerActions
         public void AddEnemy(GameObject enemy)
         {
             if(!_enemiesQueue.Contains(enemy))
+            {
                 _enemiesQueue.Add(enemy);
-            UpdateNearestEnemy();
+                UpdateNearestEnemy();
+            }
         }
         public void RemoveEnemy(GameObject enemy)
         {
             if (_enemiesQueue.Contains(enemy))
+            {
                 _enemiesQueue.Remove(enemy);
-            UpdateNearestEnemy();
+                UpdateNearestEnemy();
+            }
         }
         private void UpdateNearestEnemy()
         {
@@ -54,6 +60,7 @@ namespace TowerSystem.TowerActions
         {
             _shootingTowerSO = (ShootingTowerSO)towerSO;
             _enemiesQueue = new List<GameObject>();
+            towerTrigger.Initialize(this, _shootingTowerSO.EnemyLayer);
             //_layerMask = 1 << (int)Mathf.Log(_shootingTowerSO.EnemyLayer.value, 2);
         }
         private void Update()

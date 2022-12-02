@@ -12,22 +12,32 @@ namespace TowerSystem.TowerActions
         public void GetDamage(float damage)
         {
             _hp -= damage;
-            sliderHP.value = _hp;
+            SetHP();
+            if (_hp <= 0)
+                DestroyTower();
         }
         private void SetHP()
         {
+            sliderHP.value = _hp;
+        }
+        private void SetMaxHP()
+        {
             _hp = towerSO.HP;
             sliderHP.maxValue = _hp;
-            sliderHP.value = _hp;
+            SetHP();
+        }
+        protected virtual void DestroyTower()
+        {
+            gameObject.SetActive(false);
         }
         private void Awake()
         {
-            SetHP();
+            SetMaxHP();
         }
         protected virtual void OnMouseEnter()
         {
             sliderHP.gameObject.SetActive(true);
-            sliderHP.value = _hp;
+            SetHP();
         }
         protected virtual void OnMouseExit()
         {

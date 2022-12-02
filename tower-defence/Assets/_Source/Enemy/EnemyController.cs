@@ -29,14 +29,13 @@ namespace _Source.Enemy
             _pull = pull;
         }
 
-        public void GetDamage(float damage, Bullet bullet)
+        public void GetDamage(float damage)
         {
             _currentHp -= damage;
             if (_currentHp <= 0)
             {
-                KillEnemy(bullet.tower);
+                KillEnemy();
             }
-            bullet.target = null;
         }
 
         public void StopAttack()
@@ -45,12 +44,11 @@ namespace _Source.Enemy
             _stateMachine.SwitchStateMoving();
         }
 
-        public void KillEnemy(ShootingTowerAction tower)
+        public void KillEnemy()
         {
             StopAttack();
-            tower.RemoveEnemy(gameObject);
-            this.gameObject.SetActive(false);
-            _pull.MoveEnemyToPull(this.gameObject);
+            gameObject.SetActive(false);
+            _pull.MoveEnemyToPull(gameObject);
         }
 
         private void OnTriggerEnter(Collider other)

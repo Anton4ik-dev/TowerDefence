@@ -3,18 +3,23 @@ using UnityEngine;
 
 public class ShootingTowerTrigger : MonoBehaviour
 {
-    [SerializeField] private ShootingTowerAction tower;
-    [SerializeField] private LayerMask mask;
+    private ShootingTowerAction _tower;
+    private LayerMask _mask;
+    public void Initialize(ShootingTowerAction tower, LayerMask mask)
+    {
+        _tower = tower;
+        _mask = mask;
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if ((mask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+        if ((_mask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
         {
-            tower.AddEnemy(other.gameObject);
+            _tower.AddEnemy(other.gameObject);
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if ((mask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
-            tower.RemoveEnemy(other.gameObject);
+        if ((_mask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+            _tower.RemoveEnemy(other.gameObject);
     }
 }

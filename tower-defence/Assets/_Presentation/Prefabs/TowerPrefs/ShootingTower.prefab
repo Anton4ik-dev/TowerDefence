@@ -193,6 +193,7 @@ MonoBehaviour:
   towerSO: {fileID: 11400000, guid: 4841c3c19bbac7243b13b5e2e8daee94, type: 2}
   sliderHP: {fileID: 4358395681353425649}
   firePoint: {fileID: 1906852930257160159}
+  towerTrigger: {fileID: 2036185773932377446}
 --- !u!54 &-333172509866289949
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -362,8 +363,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5033433131504176029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.17, z: 0.92077}
-  m_LocalScale: {x: 0.98155946, y: 0.98155946, z: 0.98155946}
+  m_LocalPosition: {x: 0, y: 0.17, z: 1.1823}
+  m_LocalScale: {x: 1.2331331, y: 1.2331331, z: 1.2331331}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2159983449654322962}
@@ -394,10 +395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e076ac5b9a3a144880cb559f35a4ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower: {fileID: 6029957889977618788}
-  mask:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &5336993696314864452
 GameObject:
   m_ObjectHideFlags: 0
