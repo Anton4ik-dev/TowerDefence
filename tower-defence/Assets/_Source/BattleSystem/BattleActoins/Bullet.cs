@@ -30,7 +30,7 @@ namespace BattleSystem.BattleActions
                 collision.gameObject.GetComponent<EnemyController>().GetDamage(bulletSO.Damage);
                 if (!_target.gameObject.activeSelf)
                     _tower.RemoveEnemy(_target.gameObject);
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }

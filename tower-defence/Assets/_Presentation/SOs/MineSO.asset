@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e3f0c7ab1d0fe4080b96856b1a1b31, type: 3}
   m_Name: MineSO
   m_EditorClassIdentifier: 
-  TowerPrefab: {fileID: 200204848964833287, guid: 57cbcf5250915f14692a00b9b5fab425, type: 3}
   HP: 75
-  ResourceForBuy: 1
   Cost: 10
+  TowerPrefab: {fileID: 200204848964833287, guid: 57cbcf5250915f14692a00b9b5fab425,
+    type: 3}
+  ResourceForBuy: 1
+  layerAfterTowerDestroy:
+    serializedVersion: 2
+    m_Bits: 8
   ExtractionTime: 6
   MinedAmount: 10
   MinedResource: 0

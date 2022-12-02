@@ -9,6 +9,13 @@ namespace TowerSystem.TowerActions
         [SerializeField] protected TowerDefaultSO towerSO;
         [SerializeField] private Slider sliderHP;
         private float _hp;
+        private GameObject _cell;
+
+        public void Initialize(GameObject cell)
+        {
+            SetMaxHP();
+            _cell = cell;
+        }
         public void GetDamage(float damage)
         {
             _hp -= damage;
@@ -20,19 +27,20 @@ namespace TowerSystem.TowerActions
         {
             sliderHP.value = _hp;
         }
-        private void SetMaxHP()
+        protected void SetMaxHP()
         {
             _hp = towerSO.HP;
             sliderHP.maxValue = _hp;
             SetHP();
         }
+        private void ChangeCellLayer()
+        {
+            _cell.layer = (int)Mathf.Log(towerSO.layerAfterTowerDestroy.value, 2);
+        }
         protected virtual void DestroyTower()
         {
             gameObject.SetActive(false);
-        }
-        private void Awake()
-        {
-            SetMaxHP();
+            ChangeCellLayer();
         }
         protected virtual void OnMouseEnter()
         {

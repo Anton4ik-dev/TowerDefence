@@ -12,6 +12,7 @@ namespace TowerSystem.TowersSO
         [Header("OtherInfo")]
         public GameObject TowerPrefab;
         public ResourceType ResourceForBuy;
+        public LayerMask layerAfterTowerDestroy;
 
     }
 }

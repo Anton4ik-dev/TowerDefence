@@ -10,7 +10,10 @@ namespace Services
         {
             Vector3 spawnPos = cell.transform.position;
             spawnPos.y += towerPrefab.transform.localScale.y / 2 + cell.transform.localScale.y / 2;
-            GameObject.Instantiate(towerPrefab, spawnPos, Quaternion.identity);
+
+            GameObject newTower = GameObject.Instantiate(towerPrefab, spawnPos, Quaternion.identity);
+            newTower.GetComponent<TowerDefaultAction>().Initialize(cell);
+
             cell.layer = (int)Mathf.Log(placedLayer.value, 2);
         }
         public static void SpawnBullet(ShootingTowerAction tower, GameObject bullet, Vector3 spawnPos, Transform target, LayerMask enemyLayer)
