@@ -6,7 +6,8 @@ namespace EconomicSystem
     public class ResourceService
     {
         public static Action<int, ResourceType> OnAddResource;
-        public static Func<int, ResourceType, bool> OnTakeResource;
+        public static Action<int, ResourceType> OnTakeResource;
+        public static Func<int, ResourceType, bool> OnCheckResource;
 
         private TextMeshProUGUI _goldText;
         private TextMeshProUGUI _oilText;
@@ -25,6 +26,7 @@ namespace EconomicSystem
         {
             OnAddResource += AddResource;
             OnTakeResource += TakeResource;
+            OnCheckResource += CheckResource;
         }
         private void AddResource(int resourceAmount, ResourceType resourceType)
         {
@@ -35,18 +37,23 @@ namespace EconomicSystem
 
             UpdateTextView();
         }
-        private bool TakeResource(int resourceAmount, ResourceType resourceType)
+        private void TakeResource(int resourceAmount, ResourceType resourceType)
+        {
+            if (resourceType == ResourceType.Gold)
+                _gold -= resourceAmount;
+            else if (resourceType == ResourceType.Oil)
+                _oil -= resourceAmount;
+
+            UpdateTextView();
+        }
+        private bool CheckResource(int resourceAmount, ResourceType resourceType)
         {
             if (resourceType == ResourceType.Gold && _gold - resourceAmount >= 0)
             {
-                _gold -= resourceAmount;
-                UpdateTextView();
                 return true;
             }
             else if (resourceType == ResourceType.Oil && _oil - resourceAmount >= 0)
             {
-                _oil -= resourceAmount;
-                UpdateTextView();
                 return true;
             }
 

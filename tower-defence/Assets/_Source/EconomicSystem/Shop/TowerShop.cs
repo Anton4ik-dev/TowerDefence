@@ -17,7 +17,7 @@ namespace EconomicSystem
         public void BuyMine()
         {
             _buyingTower = mineSO;
-            if (ResourceService.OnTakeResource.Invoke(_buyingTower.Cost, _buyingTower.ResourceForBuy))
+            if (ResourceService.OnCheckResource.Invoke(_buyingTower.Cost, _buyingTower.ResourceForBuy))
             {
                 EnableShop();
             }
@@ -25,17 +25,12 @@ namespace EconomicSystem
         public void BuyShootingTower()
         {
             _buyingTower = shootingTowerSO;
-            if (ResourceService.OnTakeResource.Invoke(_buyingTower.Cost, _buyingTower.ResourceForBuy))
+            if (ResourceService.OnCheckResource.Invoke(_buyingTower.Cost, _buyingTower.ResourceForBuy))
             {
                 EnableShop();
             }
         }
-        private void EnableShop()
-        {
-            cellsView.HighlightCells();
-            towerPositionChooser.enabled = true;
-        }
-        private void DisableShop()
+        public void DisableShop()
         {
             towerPositionChooser.enabled = false;
             cellsView.UnHighlightCells();
@@ -43,7 +38,13 @@ namespace EconomicSystem
         public void BuyTower(GameObject cell)
         {
             SpawnerService.SpawnTower(cell, _buyingTower.TowerPrefab, placedLayer);
+            ResourceService.OnTakeResource(_buyingTower.Cost, _buyingTower.ResourceForBuy);
             DisableShop();
+        }
+        private void EnableShop()
+        {
+            cellsView.HighlightCells();
+            towerPositionChooser.enabled = true;
         }
     }
 }

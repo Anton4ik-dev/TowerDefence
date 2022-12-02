@@ -19,8 +19,8 @@ namespace BattleSystem.BattleActions
         }
         private void Update()
         {
-            if(!_target.gameObject.activeSelf)
-                gameObject.SetActive(false);
+            if (!_target.gameObject.activeSelf)
+                Destroy(gameObject);
 
             Vector3 dir = _target.position - transform.position;
             float distanceThisFrame = bulletSO.Speed * Time.deltaTime;
@@ -31,7 +31,7 @@ namespace BattleSystem.BattleActions
             if (_enemyLayer == other.gameObject.layer)
             {
                 other.gameObject.GetComponent<EnemyController>().GetDamage(bulletSO.Damage);
-                gameObject.SetActive(false);
+                Destroy(gameObject);
             }
         }
     }
