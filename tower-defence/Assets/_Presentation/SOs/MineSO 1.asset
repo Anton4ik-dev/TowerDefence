@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57e3f0c7ab1d0fe4080b96856b1a1b31, type: 3}
-  m_Name: MineSO
+  m_Name: MineSO 1
   m_EditorClassIdentifier: 
   HP: 75
   Cost: 10
@@ -20,6 +20,12 @@ MonoBehaviour:
   layerAfterTowerDestroy:
     serializedVersion: 2
     m_Bits: 8
+  layerOnSpawn:
+    serializedVersion: 2
+    m_Bits: 64
+  UpgradeTowerDefaultSO: {fileID: 11400000, guid: 86c4a0defbbd13842b3abb78d6f5e6b6,
+    type: 2}
+  RepairCost: 5
   ExtractionTime: 6
   MinedAmount: 10
   MinedResource: 0

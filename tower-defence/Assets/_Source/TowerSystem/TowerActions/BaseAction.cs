@@ -6,6 +6,7 @@ namespace TowerSystem.TowerActions
     {
         private void Start()
         {
+            HealOnFull();
             SetMaxHP();
         }
         protected override void DestroyTower()
@@ -14,5 +15,6 @@ namespace TowerSystem.TowerActions
         }
         protected override void OnMouseEnter() { }
         protected override void OnMouseExit() { }
+        protected override void OnMouseDown() { }
     }
 }

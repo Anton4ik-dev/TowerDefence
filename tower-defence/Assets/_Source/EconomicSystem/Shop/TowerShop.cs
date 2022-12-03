@@ -10,7 +10,6 @@ namespace EconomicSystem
         [SerializeField] private ShootingTowerSO shootingTowerSO;
         [SerializeField] private CellsView cellsView;
         [SerializeField] private TowerPositionChooser towerPositionChooser;
-        [SerializeField] private LayerMask placedLayer;
 
         private TowerDefaultSO _buyingTower;
 
@@ -37,7 +36,7 @@ namespace EconomicSystem
         }
         public void BuyTower(GameObject cell)
         {
-            SpawnerService.SpawnTower(cell, _buyingTower.TowerPrefab, placedLayer);
+            SpawnerService.SpawnTower(cell, _buyingTower.TowerPrefab, _buyingTower.layerOnSpawn);
             ResourceService.OnTakeResource(_buyingTower.Cost, _buyingTower.ResourceForBuy);
             DisableShop();
         }

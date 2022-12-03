@@ -9,10 +9,17 @@ namespace TowerSystem.TowersSO
         public float HP;
         public int Cost;
 
-        [Header("OtherInfo")]
+        [Header("TowerDefaultInfo")]
         public GameObject TowerPrefab;
         public ResourceType ResourceForBuy;
         public LayerMask layerAfterTowerDestroy;
+        public LayerMask layerOnSpawn;
+
+        [Header("UpgradeTowerInfo")]
+        public TowerDefaultSO UpgradeTowerDefaultSO;
+
+        [Header("RepairCost")]
+        public int RepairCost;
 
     }
 }
