@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 50
   Cost: 15
-  TowerPrefab: {fileID: 87553939463846425, guid: 6d6ce86f74384b94aa867a7914a1a18c,
+  TowerPrefab: {fileID: 1914853566491477751, guid: a7bb5454d0a9a8e45ac3b21a68ff60da,
     type: 3}
   ResourceForBuy: 0
   layerAfterTowerDestroy:

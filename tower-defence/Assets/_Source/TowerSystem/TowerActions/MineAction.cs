@@ -14,9 +14,9 @@ namespace TowerSystem.TowerActions
 
         private void AddOil()
         {
+            SetExtractionTimer();
             EnableTimer();
             ResourceService.OnAddResource?.Invoke(_mineSO.MinedAmount, _mineSO.MinedResource);
-            SetExtractionTimer();
         }
         private void SetExtractionTimer()
         {
