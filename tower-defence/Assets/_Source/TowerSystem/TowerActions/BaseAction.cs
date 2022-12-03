@@ -1,3 +1,4 @@
+using UIFlow;
 using UnityEngine.SceneManagement;
 
 namespace TowerSystem.TowerActions
@@ -11,7 +12,7 @@ namespace TowerSystem.TowerActions
         }
         protected override void DestroyTower()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManagement.OnEndGame.Invoke();
         }
         protected override void OnMouseEnter() { }
         protected override void OnMouseExit() { }
