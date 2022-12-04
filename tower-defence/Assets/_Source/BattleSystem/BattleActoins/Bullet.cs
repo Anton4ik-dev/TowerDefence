@@ -1,6 +1,5 @@
 using _Source.Enemy;
 using BattleSystem.BattleSO;
-using TowerSystem.TowerActions;
 using UnityEngine;
 
 namespace BattleSystem.BattleActions
@@ -8,12 +7,10 @@ namespace BattleSystem.BattleActions
     public class Bullet : MonoBehaviour
     {
         [SerializeField] private BulletSO bulletSO;
-        private ShootingTowerAction _tower;
         private Transform _target;
         private int _enemyLayer;
-        public void PutTarget(ShootingTowerAction tower, Transform target, int enemyLayer)
+        public void PutTarget(Transform target, int enemyLayer)
         {
-            _tower = tower;
             _target = target;
             _enemyLayer = enemyLayer;
         }

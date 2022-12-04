@@ -29,7 +29,7 @@ namespace EconomicSystem
                 EnableShop();
             }
         }
-        public void DisableShop()
+        private void DisableShop()
         {
             towerPositionChooser.enabled = false;
             cellsView.UnHighlightCells();

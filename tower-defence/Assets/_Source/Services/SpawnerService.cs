@@ -26,10 +26,10 @@ namespace Services
 
             cell.layer = (int)Mathf.Log(placedLayer.value, 2);
         }
-        public static void SpawnBullet(ShootingTowerAction tower, GameObject bullet, Vector3 spawnPos, Transform target, int enemyLayer)
+        public static void SpawnBullet(GameObject bullet, Vector3 spawnPos, Transform target, int enemyLayer)
         {
             GameObject newBullet = GameObject.Instantiate(bullet, spawnPos, Quaternion.identity);
-            newBullet.GetComponent<Bullet>().PutTarget(tower, target, enemyLayer);
+            newBullet.GetComponent<Bullet>().PutTarget(target, enemyLayer);
         }
     }
 }

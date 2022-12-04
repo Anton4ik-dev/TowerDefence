@@ -61,14 +61,20 @@ namespace TowerSystem.TowerActions
         {
             _hp = towerSO.HP;
         }
+        private void SetHP()
+        {
+            sliderHP.value = _hp;
+        }
         private void Bind(GameObject cell)
         {
             upgradeButton.onClick.AddListener(UpgradeTower);
             repairButton.onClick.AddListener(RepairTower);
+
             if (towerSO.UpgradeTowerDefaultSO != null)
                 upgradeText.text = $"{towerSO.UpgradeTowerDefaultSO.Cost}";
             else
                 upgradeText.text = maxLevelText;
+
             repairText.text = $"{towerSO.RepairCost}";
 
             _cell = cell;
@@ -80,7 +86,7 @@ namespace TowerSystem.TowerActions
                 if (ResourceService.OnCheckResource.Invoke(towerSO.UpgradeTowerDefaultSO.Cost, towerSO.UpgradeTowerDefaultSO.ResourceForBuy))
                 {
                     Debug.Log("UPGRADE");
-                    ResourceService.OnTakeResource.Invoke(towerSO.UpgradeTowerDefaultSO.Cost, towerSO.UpgradeTowerDefaultSO.ResourceForBuy);
+                    ResourceService.OnTakeResource?.Invoke(towerSO.UpgradeTowerDefaultSO.Cost, towerSO.UpgradeTowerDefaultSO.ResourceForBuy);
                     SpawnerService.SpawnTower(_cell, towerSO.UpgradeTowerDefaultSO.TowerPrefab, towerSO.layerOnSpawn, _hp);
                     DestroyTower();
                 }
@@ -91,14 +97,10 @@ namespace TowerSystem.TowerActions
             if (ResourceService.OnCheckResource.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy) && _hp != towerSO.HP)
             {
                 Debug.Log("REPAIR");
-                ResourceService.OnTakeResource.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy);
+                ResourceService.OnTakeResource?.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy);
                 HealOnFull();
                 SetHP();
             }
-        }
-        private void SetHP()
-        {
-            sliderHP.value = _hp;
         }
         private void ChangeCellLayer()
         {
