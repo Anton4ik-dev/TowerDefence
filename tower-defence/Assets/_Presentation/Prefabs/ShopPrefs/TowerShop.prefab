@@ -48,6 +48,3 @@ MonoBehaviour:
   shootingTowerSO: {fileID: 11400000, guid: 4841c3c19bbac7243b13b5e2e8daee94, type: 2}
   cellsView: {fileID: 0}
   towerPositionChooser: {fileID: 0}
-  placedLayer:
-    serializedVersion: 2
-    m_Bits: 64

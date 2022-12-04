@@ -47,4 +47,4 @@ MonoBehaviour:
   goldText: {fileID: 0}
   oilText: {fileID: 0}
   gold: 50
-  oil: 0
+  oil: 25

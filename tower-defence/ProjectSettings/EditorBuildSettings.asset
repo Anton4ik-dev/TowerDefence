@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/_Presentation/Scenes/FirstLevel.unity
     guid: ac07201d8487633489fbd52d498389ab
   - enabled: 1
-    path: Assets/_Presentation/Scenes/Enemy_Valera.unity
-    guid: 8108457befe1d49fbb0991345f7e1487
+    path: Assets/_Presentation/Scenes/SecondLevel.unity
+    guid: 39219ccca182256478830d2191425964
   m_configObjects: {}
