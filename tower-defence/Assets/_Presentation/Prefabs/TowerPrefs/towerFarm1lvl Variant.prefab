@@ -811,7 +811,7 @@ MonoBehaviour:
   towerBuyField: {fileID: 4094315309485752693}
   upgradeButton: {fileID: 5285020552097712101}
   upgradeText: {fileID: 4971013418317599634}
-  repairButton: {fileID: 5285020552097712101}
+  repairButton: {fileID: 6032074093966502864}
   repairText: {fileID: 745985911082421502}
   oilAdderButton: {fileID: 6636312768045796083}
 --- !u!1001 &7500421231696298698
@@ -978,6 +978,18 @@ MonoBehaviour:
 --- !u!114 &5285020552097712101 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2400123313048388911, guid: 20b96c69d1e82aa429620920e902b2a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7500421231696298698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6032074093966502864 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4296682752389671194, guid: 20b96c69d1e82aa429620920e902b2a6,
     type: 3}
   m_PrefabInstance: {fileID: 7500421231696298698}
   m_PrefabAsset: {fileID: 0}
