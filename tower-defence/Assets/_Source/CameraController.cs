@@ -1,4 +1,4 @@
-using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace _Source
@@ -6,13 +6,30 @@ namespace _Source
     public class CameraController : MonoBehaviour
     {
         [SerializeField] private float speed;
+        [SerializeField] private float endAngel;
+        private Quaternion _startRotation;
+        private bool _isRotate;
+
+        private void Start()
+        {
+            _startRotation = transform.rotation;
+        }
 
         void Update()
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                var y = -Input.GetAxis("Mouse X") * speed * Time.deltaTime;
-                transform.rotation = Quaternion.Euler(0, y,0);
+                Debug.Log("space");
+                if (_isRotate == false)
+                {
+                    transform.DORotate(new Vector3(0, endAngel, 0), speed);
+                    _isRotate = true;
+                }
+                else
+                {
+                    transform.DORotateQuaternion(_startRotation, speed);
+                    _isRotate = false;
+                }
             }
         }
     }

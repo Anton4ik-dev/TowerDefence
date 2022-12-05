@@ -7,11 +7,8 @@
     <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/SOs/AirEnemy.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/SOs/AirEnemy.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/SOs/EnemySo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/SOs/EnemySo.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/FirstLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/FirstLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/CollectorCoin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/CollectorCoin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/CameraController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,7 @@
       <workItem from="1669805727969" duration="16642000" />
       <workItem from="1669892120036" duration="9160000" />
       <workItem from="1669986393317" duration="6472000" />
-      <workItem from="1670241470205" duration="14900000" />
+      <workItem from="1670241470205" duration="15779000" />
     </task>
     <servers />
   </component>
