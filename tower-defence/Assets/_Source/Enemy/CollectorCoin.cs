@@ -14,7 +14,6 @@ namespace _Source.Enemy
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 if(Physics.Raycast(ray, out hit, Mathf.Infinity, layerCoin))
                 {
-                    Debug.Log("coin");
                     hit.collider.GetComponent<Coin>().AddMoney();
                 }
             }

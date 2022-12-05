@@ -295,6 +295,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110750479066117314, guid: 068f44857fbfe6f4888a4625f0ea9243,
         type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 110750479066117314, guid: 068f44857fbfe6f4888a4625f0ea9243,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.4
       objectReference: {fileID: 0}
@@ -520,6 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730112797}
   - component: {fileID: 730112796}
+  - component: {fileID: 730112798}
   m_Layer: 0
   m_Name: SpawnerEnemy
   m_TagString: Untagged
@@ -549,7 +555,6 @@ MonoBehaviour:
   wavesEnemies:
   - {fileID: 11400000, guid: 7d35ce50c0c8a45488ef1db933e68d1a, type: 2}
   - {fileID: 11400000, guid: 1df7de00b7bd34c3da665afdbe7c983e, type: 2}
-  _currentWave: 0
 --- !u!4 &730112797
 Transform:
   m_ObjectHideFlags: 0
@@ -565,6 +570,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730112798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730112795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0418ff5c3044c455191bd403bd52a3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerCoin:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &828228730 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5133818829988730831, guid: 01f1a7e6b3676074f9339dc89ec60750,

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using _Source.Enemy.EnemySO;
 using _Source.Enemy.EnemyStates;
+using UIFlow;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,7 +16,7 @@ namespace _Source.Enemy
         private EnemyPull _pull;
         private int _currentCountSpawn;
         private List<int> _currentCountEnemyInWave; 
-        [SerializeField]private int _currentWave;
+        private int _currentWave;
 
         private void Start()
         {
@@ -25,7 +26,11 @@ namespace _Source.Enemy
 
         public void SpawnNextWave()
         {
-            if(_currentWave == wavesEnemies.Count-1) return;
+            if (_currentWave == wavesEnemies.Count - 1)
+            {
+                SceneManagement.OnEndGame.Invoke();
+                return;
+            }
             _currentWave++;
             SpawnEnemy(wavesEnemies[_currentWave]);
         }
