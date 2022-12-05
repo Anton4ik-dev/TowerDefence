@@ -8,6 +8,7 @@ namespace _Source.Enemy.EnemySO
         public float hp;
         public bool isAir;
         public float speedMove;
+        public int chanceOfCoinDrop;
         public float damage;
         public float speedAttack;
         public float damageForBase;

@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using _Source.Enemy.EnemySO;
 using _Source.Enemy.EnemyStates;
-using BattleSystem.BattleActions;
 using TowerSystem.TowerActions;
+using Random = UnityEngine.Random;
 using UnityEngine;
 
 namespace _Source.Enemy
@@ -15,6 +14,7 @@ namespace _Source.Enemy
         [SerializeField] private Vector3 vectorMoving;
         [SerializeField] private LayerMask layerTower;
         [SerializeField] private LayerMask layerBase;
+        public TypeEnemySo GetTypeEnemy => typeEnemy;
         private EnemyStateMachine _stateMachine;
         private bool _isMoving = true;
         private float _currentHp;
@@ -50,8 +50,9 @@ namespace _Source.Enemy
         {
             StopAttack();
             gameObject.SetActive(false);
-            Instantiate(coinPrefab, transform.position, Quaternion.identity);
-            _pull.MoveEnemyToPull(gameObject);
+            var createCoin = Random.Range(0, 10) <= typeEnemy.chanceOfCoinDrop;
+            if(createCoin)Instantiate(coinPrefab, transform.position, Quaternion.identity);
+            _pull.MoveEnemyToPull(this.gameObject, typeEnemy);
         }
 
         private void OnTriggerEnter(Collider other)
