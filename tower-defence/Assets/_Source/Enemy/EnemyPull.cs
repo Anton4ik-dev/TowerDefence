@@ -11,7 +11,6 @@ namespace _Source.Enemy.EnemyStates
         private Dictionary<TypeEnemySo, List<GameObject>> _enemiesInPull;
         private List<TypeEnemySo> _typesEnemy;
         private SpawnerEnemy _spawnerEnemy;
-
         public EnemyPull(SpawnerEnemy spawnerEnemy)
         {
             _activeEnemies = new Dictionary<TypeEnemySo, List<GameObject>>();
@@ -20,25 +19,31 @@ namespace _Source.Enemy.EnemyStates
             _spawnerEnemy = spawnerEnemy;
         }
 
+        public void AddNewTypeEnemy(TypeEnemySo type)
+        {
+            var types = _enemiesInPull.Keys;
+            bool isIn = false;
+            foreach (var key in types)
+            {
+                if (key == type) isIn = true;
+            }
+            if(isIn == false)
+            {
+                _enemiesInPull.Add(type, new List<GameObject>());
+                _typesEnemy.Add(type);
+                _activeEnemies.Add(type, new List<GameObject>());
+            }
+            
+        }
+
         public bool CheckEnemy(TypeEnemySo typeEnemy)
         {
-
-            try
+            if (_enemiesInPull[typeEnemy].Count != 0)
             {
-                if (_enemiesInPull[typeEnemy].Count != 0)
-                {
-                    return true;
-                }
-                return false;
+                return true;
             }
-            catch (Exception e)
-            {
-                _enemiesInPull.Add(typeEnemy, new List<GameObject>());
-                _activeEnemies.Add(typeEnemy, new List<GameObject>());
-                _typesEnemy.Add(typeEnemy);
-                return false;
+            return false;
             }
-        }
 
         public void ActivateEnemy(Transform pos, TypeEnemySo typeEnemy)
         {

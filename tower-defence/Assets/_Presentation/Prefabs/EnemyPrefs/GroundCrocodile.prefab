@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8508984391711968028}
   - component: {fileID: 5817691841304585968}
   - component: {fileID: 490796424120781730}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCrocodile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

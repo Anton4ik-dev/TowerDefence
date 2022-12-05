@@ -37,6 +37,7 @@ namespace _Source.Enemy
             {
                 _currentCountEnemyInWave.Add(parameter.count);
                 _currentCountSpawn += parameter.count;
+                _pull.AddNewTypeEnemy(parameter.enemy.GetComponent<EnemyController>().GetTypeEnemy);
             }
             DistributionOfEnemies();
         }
@@ -47,7 +48,7 @@ namespace _Source.Enemy
                 return;
             }
             var place = Random.Range(0, positionForSpawn.Count);
-            var type = Random.Range(0, _currentCountEnemyInWave.Count);
+            var type = Random.Range(0, _currentCountEnemyInWave.Count-1);
             if (_currentCountEnemyInWave[type] == 0)
             {
                 _currentCountEnemyInWave.Remove(type);
