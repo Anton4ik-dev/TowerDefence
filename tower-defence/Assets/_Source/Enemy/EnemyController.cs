@@ -1,4 +1,5 @@
 using System.Collections;
+using _Source.EconomicSystem;
 using _Source.Enemy.EnemySO;
 using _Source.Enemy.EnemyStates;
 using TowerSystem.TowerActions;
@@ -51,7 +52,11 @@ namespace _Source.Enemy
             StopAttack();
             gameObject.SetActive(false);
             var createCoin = Random.Range(0, 10) <= typeEnemy.chanceOfCoinDrop;
-            if(createCoin)Instantiate(coinPrefab, transform.position, Quaternion.identity);
+            if (createCoin)
+            {
+                var coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+                coin.GetComponent<Coin>().SetPrice(typeEnemy.setMoney);
+            }
             _pull.MoveEnemyToPull(this.gameObject, typeEnemy);
         }
 

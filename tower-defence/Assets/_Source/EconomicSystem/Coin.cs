@@ -8,12 +8,18 @@ namespace _Source.EconomicSystem
     public class Coin : MonoBehaviour
     {
         [SerializeField] private float timeLife;
-        [SerializeField] private int count;
-        
+        [SerializeField] private ResourceType typeMoney;
+        private int _price;
+
         public void AddMoney()
         {
-            ResourceService.OnAddResource(count, ResourceType.Gold);
+            ResourceService.OnAddResource(_price, typeMoney);
             Destroy(this.gameObject);
+        }
+
+        public void SetPrice(int price)
+        {
+            _price = price;
         }
 
         private void Awake()

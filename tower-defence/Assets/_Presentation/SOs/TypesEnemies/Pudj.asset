@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c41a4a91a738e43918c0215482b6a761, type: 3}
-  m_Name: EnemySo
+  m_Name: Pudj
   m_EditorClassIdentifier: 
-  hp: 12
-  isAir: 0
-  speedMove: 1
+  hp: 150
+  isAir: 1
+  speedMove: 0.5
   chanceOfCoinDrop: 4
-  damage: 20
-  speedAttack: 2
-  damageForBase: 10
+  setMoney: 50
+  damage: 100
+  speedAttack: 3
+  damageForBase: 100

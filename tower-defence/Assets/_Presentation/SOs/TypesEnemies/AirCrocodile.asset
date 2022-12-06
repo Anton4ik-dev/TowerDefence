@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c41a4a91a738e43918c0215482b6a761, type: 3}
-  m_Name: AirEnemy
+  m_Name: AirCrocodile
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 50
   isAir: 1
   speedMove: 1
-  chanceOfCoinDrop: 9
-  damage: 15
+  chanceOfCoinDrop: 3
+  setMoney: 20
+  damage: 25
   speedAttack: 1
-  damageForBase: 3
+  damageForBase: 25

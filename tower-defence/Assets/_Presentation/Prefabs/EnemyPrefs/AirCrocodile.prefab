@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 5289512396011508393, guid: 7f77e5f8bd290473187918a8aef6ee26,
     type: 3}
-  typeEnemy: {fileID: 11400000, guid: 7ab244a67bc914cc488202d819e6cf22, type: 2}
+  typeEnemy: {fileID: 11400000, guid: 0ef15d5d773b6404f9f0d4545294abbd, type: 2}
   vectorMoving: {x: 0, y: 0, z: -1}
   layerTower:
     serializedVersion: 2

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
+  m_IndirectSpecularColor: {r: 262.302, g: 324.99048, b: 430.14307, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -575,15 +575,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionForSpawn:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4031971331790944979}
+  - {fileID: 4031971331790944978}
+  - {fileID: 4031971331790944977}
+  - {fileID: 4031971331790944976}
+  - {fileID: 4031971331790944975}
+  - {fileID: 4031971331790944974}
+  - {fileID: 4031971331790944973}
+  - {fileID: 4031971331790944972}
+  - {fileID: 4031971331790944971}
+  - {fileID: 4031971331790944970}
   wavesEnemies:
-  - {fileID: 11400000, guid: 7d35ce50c0c8a45488ef1db933e68d1a, type: 2}
-  - {fileID: 11400000, guid: 1df7de00b7bd34c3da665afdbe7c983e, type: 2}
+  - {fileID: 11400000, guid: 472b3c9c313d3415eb730436500a398f, type: 2}
+  - {fileID: 11400000, guid: 675a6573bdd104a79a6dc46d88e30913, type: 2}
+  - {fileID: 11400000, guid: 675a6573bdd104a79a6dc46d88e30913, type: 2}
+  - {fileID: 11400000, guid: 472b3c9c313d3415eb730436500a398f, type: 2}
+  - {fileID: 11400000, guid: 9f7d17bf02f994332994ffc9c6130b26, type: 2}
 --- !u!4 &730112797
 Transform:
   m_ObjectHideFlags: 0
@@ -1172,3 +1179,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e126e29b67c70ab4fa35a44627c46b53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &4031971331790944970 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5348502046832913526, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5695906303368976303, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944972 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2103770927431021903, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944973 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2050168750850440571, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944974 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6397477523831962847, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2032293051886919667, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944976 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2899063615542372597, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944977 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6540393730518814809, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8287834711655997647, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4031971331790944979 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5261720052137883567, guid: cacbb2f0095f7f140b0cb841205f422a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4031971331790944968}
+  m_PrefabAsset: {fileID: 0}
