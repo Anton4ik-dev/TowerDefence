@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e3f0c7ab1d0fe4080b96856b1a1b31, type: 3}
+  m_Name: MineSO 3
+  m_EditorClassIdentifier: 
+  HP: 125
+  Cost: 20
+  TowerPrefab: {fileID: 6475391706515971167, guid: 5a89533419d4ee943a0d00970deeae8a,
+    type: 3}
+  ResourceForBuy: 1
+  layerAfterTowerDestroy:
+    serializedVersion: 2
+    m_Bits: 8
+  layerOnSpawn:
+    serializedVersion: 2
+    m_Bits: 64
+  UpgradeTowerDefaultSO: {fileID: 0}
+  RepairCost: 10
+  ExtractionTime: 4
+  MinedAmount: 20
+  MinedResource: 0

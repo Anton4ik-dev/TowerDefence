@@ -10,7 +10,7 @@ namespace TowerSystem.TowerActions
     public class TowerDefaultAction : MonoBehaviour
     {
         [Header("TowerInfo")]
-        [SerializeField] protected TowerDefaultSO towerSO;
+        public TowerDefaultSO towerSO;
         [SerializeField] private string maxLevelText;
 
         [Header("TowerUI")]
@@ -21,10 +21,10 @@ namespace TowerSystem.TowerActions
         [SerializeField] private Button repairButton;
         [SerializeField] private TextMeshProUGUI repairText;
 
+        protected GameObject _cell;
         private float _hp;
-        private GameObject _cell;
 
-        public void Initialize(GameObject cell)
+        public virtual void Initialize(GameObject cell)
         {
             HealOnFull();
             SetMaxHP();
@@ -33,6 +33,8 @@ namespace TowerSystem.TowerActions
         public void Initialize(GameObject cell, float hp)
         {
             _hp = hp + towerSO.HP / 2;
+            if (_hp > towerSO.HP)
+                _hp = towerSO.HP;
             SetMaxHP();
             Bind(cell);
         }
@@ -43,19 +45,19 @@ namespace TowerSystem.TowerActions
             if (_hp <= 0)
             {
                 DestroyTower();
-                ChangeCellLayer();
                 return true;
             }
             return false;
+        }
+        public virtual void DestroyTower()
+        {
+            Destroy(gameObject);
+            ChangeCellLayer();
         }
         protected void SetMaxHP()
         {
             sliderHP.maxValue = towerSO.HP;
             SetHP();
-        }
-        protected virtual void DestroyTower()
-        {
-            Destroy(gameObject);
         }
         protected void HealOnFull()
         {
@@ -94,7 +96,7 @@ namespace TowerSystem.TowerActions
         }
         private void RepairTower()
         {
-            if (ResourceService.OnCheckResource.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy) && _hp != towerSO.HP)
+            if (ResourceService.OnCheckResource.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy) && _hp < towerSO.HP)
             {
                 Debug.Log("REPAIR");
                 ResourceService.OnTakeResource?.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy);

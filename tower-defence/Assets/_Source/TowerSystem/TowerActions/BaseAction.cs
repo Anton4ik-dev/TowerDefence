@@ -1,5 +1,4 @@
 using UIFlow;
-using UnityEngine.SceneManagement;
 
 namespace TowerSystem.TowerActions
 {
@@ -10,7 +9,7 @@ namespace TowerSystem.TowerActions
             HealOnFull();
             SetMaxHP();
         }
-        protected override void DestroyTower()
+        public override void DestroyTower()
         {
             SceneManagement.OnEndGame.Invoke();
         }

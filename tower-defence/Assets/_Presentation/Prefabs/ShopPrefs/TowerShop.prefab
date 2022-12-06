@@ -46,5 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mineSO: {fileID: 11400000, guid: 1b703573abc3f8748b475126ee106256, type: 2}
   shootingTowerSO: {fileID: 11400000, guid: 4841c3c19bbac7243b13b5e2e8daee94, type: 2}
+  fenceSO: {fileID: 11400000, guid: 00fcad2d66c7ce6408798abdd1d92c99, type: 2}
+  zenitTowerSO: {fileID: 11400000, guid: 1735687f84a99bd4883d11702d881f86, type: 2}
+  bombSO: {fileID: 11400000, guid: 3c86346879c71ed44ab37f46f09fbf32, type: 2}
   cellsView: {fileID: 0}
   towerPositionChooser: {fileID: 0}

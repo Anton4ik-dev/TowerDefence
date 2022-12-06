@@ -21,6 +21,8 @@ namespace EconomicSystem
                 {
                     towerShop.BuyTower(hit.transform.gameObject);
                 }
+                else
+                    towerShop.DisableShop();
             }
         }
     }

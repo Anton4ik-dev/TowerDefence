@@ -9,7 +9,7 @@ namespace Services
         public static void SpawnTower(GameObject cell, GameObject towerPrefab, LayerMask placedLayer)
         {
             Vector3 spawnPos = cell.transform.position;
-            //spawnPos.y += towerPrefab.transform.localScale.y / 2;
+            spawnPos.y += towerPrefab.transform.localScale.y / 100;
 
             GameObject newTower = GameObject.Instantiate(towerPrefab, spawnPos, Quaternion.identity);
             newTower.GetComponent<TowerDefaultAction>().Initialize(cell);
@@ -19,7 +19,7 @@ namespace Services
         public static void SpawnTower(GameObject cell, GameObject towerPrefab, LayerMask placedLayer, float hp)
         {
             Vector3 spawnPos = cell.transform.position;
-            //spawnPos.y += towerPrefab.transform.localScale.y / 2;
+            spawnPos.y += towerPrefab.transform.localScale.y / 100;
 
             GameObject newTower = GameObject.Instantiate(towerPrefab, spawnPos, Quaternion.identity);
             newTower.GetComponent<TowerDefaultAction>().Initialize(cell, hp);

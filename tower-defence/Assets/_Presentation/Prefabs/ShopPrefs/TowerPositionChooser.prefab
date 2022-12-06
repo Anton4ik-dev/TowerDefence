@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9125456855026823284}
   - component: {fileID: 9125456855026823287}
+  - component: {fileID: 7413945482816153061}
   m_Layer: 0
   m_Name: TowerPositionChooser
   m_TagString: Untagged
@@ -47,4 +48,20 @@ MonoBehaviour:
   activeLayer:
     serializedVersion: 2
     m_Bits: 8
+  towerShop: {fileID: 0}
+--- !u!114 &7413945482816153061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9125456855026823286}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d535cd6fdaceb49aecfcc0e473b3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   towerShop: {fileID: 0}

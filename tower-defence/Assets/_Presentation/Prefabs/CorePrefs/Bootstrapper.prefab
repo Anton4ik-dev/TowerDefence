@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldText: {fileID: 0}
   oilText: {fileID: 0}
-  gold: 50
-  oil: 25
+  gold: 1000
+  oil: 1000

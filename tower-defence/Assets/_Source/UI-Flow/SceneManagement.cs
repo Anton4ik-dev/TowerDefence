@@ -20,6 +20,11 @@ namespace UIFlow
             SceneManager.LoadScene(0);
             ContinueTime();
         }
+        public void Restart()
+        {
+            ContinueTime();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         public void LoadNextLevel()
         {
             ContinueTime();
