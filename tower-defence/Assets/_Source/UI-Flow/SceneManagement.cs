@@ -42,6 +42,10 @@ namespace UIFlow
         {
             SceneManager.LoadScene(3);
         }
+        public void LoadThirdLevel()
+        {
+            SceneManager.LoadScene(4);
+        }
         public void Pause()
         {
             pausePanel.gameObject.SetActive(true);
