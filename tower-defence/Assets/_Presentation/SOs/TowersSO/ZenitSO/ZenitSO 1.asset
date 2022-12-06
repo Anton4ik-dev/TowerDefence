@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daae9fed795142a40821656a25647baa, type: 3}
   m_Name: ZenitSO 1
   m_EditorClassIdentifier: 
-  HP: 100
-  Cost: 20
+  HP: 120
+  Cost: 50
   TowerPrefab: {fileID: 1438512716220916043, guid: 9cb82a03ba507ae4891882ac2d419dfe,
     type: 3}
   ResourceForBuy: 0
@@ -30,5 +30,5 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  BulletPrefab: {fileID: 8108379932431986831, guid: 140bfbd8f345e32498edde8939772807,
+  BulletPrefab: {fileID: 8108379932431986831, guid: 4fa1af6bbccce7b4f9b01733bd428e2f,
     type: 3}

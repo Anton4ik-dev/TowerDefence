@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e3f0c7ab1d0fe4080b96856b1a1b31, type: 3}
   m_Name: MineSO 1
   m_EditorClassIdentifier: 
-  HP: 75
-  Cost: 10
+  HP: 60
+  Cost: 40
   TowerPrefab: {fileID: 7777533369900393309, guid: aced381839db7654bb004fc727efebce,
     type: 3}
   ResourceForBuy: 1
@@ -27,5 +27,5 @@ MonoBehaviour:
     type: 2}
   RepairCost: 5
   ExtractionTime: 6
-  MinedAmount: 10
+  MinedAmount: 5
   MinedResource: 0

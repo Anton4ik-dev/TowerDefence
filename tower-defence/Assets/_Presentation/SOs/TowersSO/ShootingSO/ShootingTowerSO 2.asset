@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daae9fed795142a40821656a25647baa, type: 3}
   m_Name: ShootingTowerSO 2
   m_EditorClassIdentifier: 
-  HP: 50
-  Cost: 15
+  HP: 150
+  Cost: 50
   TowerPrefab: {fileID: 1914853566491477751, guid: a7bb5454d0a9a8e45ac3b21a68ff60da,
     type: 3}
   ResourceForBuy: 0
@@ -25,9 +25,9 @@ MonoBehaviour:
     m_Bits: 64
   UpgradeTowerDefaultSO: {fileID: 0}
   RepairCost: 7
-  FireRate: 0.8
+  FireRate: 1
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  BulletPrefab: {fileID: 8108379932431986831, guid: 140bfbd8f345e32498edde8939772807,
+  BulletPrefab: {fileID: 8108379932431986831, guid: 9a51af33b12eb7547a60b97a6ba25ea4,
     type: 3}

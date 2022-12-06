@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aded98ad08981544b90c18071a326bb, type: 3}
   m_Name: FanceSO 2
   m_EditorClassIdentifier: 
-  HP: 300
-  Cost: 40
+  HP: 450
+  Cost: 100
   TowerPrefab: {fileID: 7779077084346411665, guid: 519bc6ee8f917cc4d8052be8338ea21a,
     type: 3}
   ResourceForBuy: 0
