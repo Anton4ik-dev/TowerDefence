@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.302, g: 324.99048, b: 430.14307, a: 1}
+  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 187435022, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1047695585}
+    - target: {fileID: 215036611, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 380507009, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 383675442, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1047695585}
     - target: {fileID: 1714396733894077708, guid: 01f1a7e6b3676074f9339dc89ec60750,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -362,6 +378,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7413945482816153061, guid: 50a1116e608fccc4da445990e445ab7a,
+        type: 3}
+      propertyPath: towerShop
+      value: 
+      objectReference: {fileID: 1047695585}
     - target: {fileID: 9125456855026823284, guid: 50a1116e608fccc4da445990e445ab7a,
         type: 3}
       propertyPath: m_RootOrder
@@ -546,6 +567,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1553664197622850420, guid: f93f142606cc42348aaf7460eadae8cc,
+        type: 3}
+      propertyPath: shovel
+      value: 
+      objectReference: {fileID: 2107429135}
     - target: {fileID: 1553664197622850420, guid: f93f142606cc42348aaf7460eadae8cc,
         type: 3}
       propertyPath: cellsView
@@ -950,6 +976,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3792056075179185189}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2107429135 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7413945482816153061, guid: 50a1116e608fccc4da445990e445ab7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 448905733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d535cd6fdaceb49aecfcc0e473b3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &63801674852443352
 PrefabInstance:
   m_ObjectHideFlags: 0
