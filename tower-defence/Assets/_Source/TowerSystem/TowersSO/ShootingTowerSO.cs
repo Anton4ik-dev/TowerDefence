@@ -8,7 +8,7 @@ namespace TowerSystem.TowersSO
         [Header("Stats")]
         public float FireRate;
 
-        [Header("OtherInfo")]
+        [Header("BattleInfo")]
         public LayerMask EnemyLayer;
         public GameObject BulletPrefab;
     }

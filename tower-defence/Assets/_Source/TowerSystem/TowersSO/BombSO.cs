@@ -9,7 +9,7 @@ namespace TowerSystem.TowersSO
         public float ExplosionTime;
         public float Damage;
 
-        [Header("OtherInfo")]
+        [Header("EnemyInfo")]
         public LayerMask EnemyLayer;
     }
 }
