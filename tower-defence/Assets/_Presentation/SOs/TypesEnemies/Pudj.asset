@@ -15,7 +15,7 @@ MonoBehaviour:
   hp: 150
   isAir: 1
   speedMove: 0.5
-  chanceOfCoinDrop: 4
+  chanceOfCoinDrop: 5
   setMoney: 50
   damage: 100
   speedAttack: 3

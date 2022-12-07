@@ -835,12 +835,12 @@ PrefabInstance:
     - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
         type: 3}
       propertyPath: oil
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
         type: 3}
       propertyPath: gold
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
         type: 3}

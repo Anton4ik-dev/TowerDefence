@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41a4a91a738e43918c0215482b6a761, type: 3}
   m_Name: Zerg
   m_EditorClassIdentifier: 
-  hp: 70
+  hp: 30
   isAir: 0
   speedMove: 2
-  chanceOfCoinDrop: 6
+  chanceOfCoinDrop: 10
   setMoney: 10
   damage: 15
   speedAttack: 0.5
