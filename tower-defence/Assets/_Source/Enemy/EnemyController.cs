@@ -24,9 +24,13 @@ namespace _Source.Enemy
         private void Awake()
         {
             _stateMachine = new EnemyStateMachine(GetComponent<Rigidbody>(), typeEnemy, vectorMoving);
-            _currentHp = typeEnemy.hp;
+            ResetHp();
         }
 
+        private void ResetHp()
+        {
+            _currentHp = typeEnemy.hp;
+        }
         public void SetEnemyPull(EnemyPull pull)
         {
             _pull = pull;
@@ -57,6 +61,7 @@ namespace _Source.Enemy
                 var coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 coin.GetComponent<Coin>().SetPrice(typeEnemy.setMoney);
             }
+            ResetHp();
             _pull.MoveEnemyToPull(this.gameObject, typeEnemy);
         }
 

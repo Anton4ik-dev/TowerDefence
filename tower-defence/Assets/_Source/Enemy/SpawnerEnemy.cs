@@ -61,17 +61,17 @@ namespace _Source.Enemy
                 DistributionOfEnemies();
             }
             var enemy = wavesEnemies[_currentWave].parametersEnemies[type].enemy;
-            var typeEnemy = enemy.GetComponent<EnemyController>().GetTypeEnemy;
-            if (_pull.CheckEnemy(typeEnemy))
+            var controllerEnemy = enemy.GetComponent<EnemyController>();
+            if (_pull.CheckEnemy(controllerEnemy.GetTypeEnemy))
             {
-                _pull.ActivateEnemy(positionForSpawn[place], typeEnemy);
+                _pull.ActivateEnemy(positionForSpawn[place], controllerEnemy.GetTypeEnemy);
                 _currentCountSpawn--;
                 _currentCountEnemyInWave[type]--;
                 StartCoroutine(WaitSpawnEnemy());
             }
             else
             {
-                _pull.AddNewEnemyInPull(Instantiate(enemy), typeEnemy);
+                _pull.AddNewEnemyInPull(Instantiate(enemy), controllerEnemy.GetTypeEnemy);
                 DistributionOfEnemies();
             }
         }
