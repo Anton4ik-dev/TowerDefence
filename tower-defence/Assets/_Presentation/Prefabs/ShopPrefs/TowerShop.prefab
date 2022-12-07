@@ -39,7 +39,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553664197622850427}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49749b04b882a8c4b9c27d301bdc8e3d, type: 3}
   m_Name: 
@@ -49,5 +49,11 @@ MonoBehaviour:
   fenceSO: {fileID: 11400000, guid: 00fcad2d66c7ce6408798abdd1d92c99, type: 2}
   zenitTowerSO: {fileID: 11400000, guid: 1735687f84a99bd4883d11702d881f86, type: 2}
   bombSO: {fileID: 11400000, guid: 3c86346879c71ed44ab37f46f09fbf32, type: 2}
+  mineCost: {fileID: 0}
+  shootingTowerCost: {fileID: 0}
+  fenceCost: {fileID: 0}
+  zenitTowerCost: {fileID: 0}
+  bombCost: {fileID: 0}
   cellsView: {fileID: 0}
   towerPositionChooser: {fileID: 0}
+  shovel: {fileID: 0}

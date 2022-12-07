@@ -1,4 +1,5 @@
 using Services;
+using TMPro;
 using TowerSystem.TowersSO;
 using UnityEngine;
 
@@ -13,12 +14,28 @@ namespace EconomicSystem
         [SerializeField] private ShootingTowerSO zenitTowerSO;
         [SerializeField] private BombSO bombSO;
 
+        [Header("UI")]
+        [SerializeField] private TextMeshProUGUI mineCost;
+        [SerializeField] private TextMeshProUGUI shootingTowerCost;
+        [SerializeField] private TextMeshProUGUI fenceCost;
+        [SerializeField] private TextMeshProUGUI zenitTowerCost;
+        [SerializeField] private TextMeshProUGUI bombCost;
+        
         [Header("ShopComponents")]
         [SerializeField] private CellsView cellsView;
         [SerializeField] private TowerPositionChooser towerPositionChooser;
         [SerializeField] private Shovel shovel;
 
         private TowerDefaultSO _buyingTower;
+
+        private void Start()
+        {
+            mineCost.text = $"{mineSO.Cost}";
+            shootingTowerCost.text = $"{shootingTowerSO.Cost}";
+            fenceCost.text = $"{fenceSO.Cost}";
+            zenitTowerCost.text = $"{zenitTowerSO.Cost}";
+            bombCost.text = $"{bombSO.Cost}";
+        }
 
         public void BuyMine()
         {
