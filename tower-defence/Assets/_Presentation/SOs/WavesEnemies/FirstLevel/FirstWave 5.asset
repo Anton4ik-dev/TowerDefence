@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2025b2ebb80c7a74bb17547fadb0fc50, type: 3}
-  m_Name: BulletSO 2
+  m_Script: {fileID: 11500000, guid: 1093b2b5c9549438686f850e7339aee8, type: 3}
+  m_Name: FirstWave 5
   m_EditorClassIdentifier: 
-  Damage: 50
-  Speed: 4
+  parametersEnemies:
+  - enemy: {fileID: 996798940715699432, guid: df1554f031c834f69802fc9dffc25e9d, type: 3}
+    count: 2
+  timeSpawnEnemy: 1

@@ -15,6 +15,4 @@ MonoBehaviour:
   parametersEnemies:
   - enemy: {fileID: 535107710280975859, guid: ddadac7095c5a4818bbac43a899f4d4e, type: 3}
     count: 10
-  - enemy: {fileID: 996798940715699432, guid: df1554f031c834f69802fc9dffc25e9d, type: 3}
-    count: 10
-  timeSpawnEnemy: 2
+  timeSpawnEnemy: 4

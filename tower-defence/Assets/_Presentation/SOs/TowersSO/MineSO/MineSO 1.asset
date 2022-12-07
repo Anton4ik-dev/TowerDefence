@@ -27,5 +27,5 @@ MonoBehaviour:
     type: 2}
   RepairCost: 5
   ExtractionTime: 6
-  MinedAmount: 5
+  MinedAmount: 15
   MinedResource: 0

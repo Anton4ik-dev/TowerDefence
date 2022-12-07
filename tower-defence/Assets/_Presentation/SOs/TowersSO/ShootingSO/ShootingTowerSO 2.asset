@@ -24,7 +24,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   UpgradeTowerDefaultSO: {fileID: 0}
-  RepairCost: 7
+  RepairCost: 15
   FireRate: 1
   EnemyLayer:
     serializedVersion: 2

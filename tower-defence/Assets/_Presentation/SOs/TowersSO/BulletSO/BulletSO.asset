@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BulletSO
   m_EditorClassIdentifier: 
   Damage: 20
-  Speed: 2
+  Speed: 4
