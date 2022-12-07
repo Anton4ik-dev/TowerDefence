@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,8 @@
       <workItem from="1669986393317" duration="6472000" />
       <workItem from="1670241470205" duration="15779000" />
       <workItem from="1670338707761" duration="677000" />
-      <workItem from="1670435066350" duration="411000" />
+      <workItem from="1670435066350" duration="1158000" />
+      <workItem from="1670438917254" duration="712000" />
     </task>
     <servers />
   </component>
