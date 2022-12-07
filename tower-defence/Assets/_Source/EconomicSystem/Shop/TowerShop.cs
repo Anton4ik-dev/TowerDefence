@@ -77,7 +77,7 @@ namespace EconomicSystem
         }
         public void BuyTower(GameObject cell)
         {
-            SpawnerService.SpawnTower(cell, _buyingTower.TowerPrefab, _buyingTower.layerOnSpawn);
+            SpawnerService.SpawnTower(cell, _buyingTower.TowerPrefab);
             ResourceService.OnTakeResource(_buyingTower.Cost, _buyingTower.ResourceForBuy);
             DisableShop();
         }

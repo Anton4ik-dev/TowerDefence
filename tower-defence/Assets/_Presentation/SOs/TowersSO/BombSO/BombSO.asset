@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63b3e821142c314d8aaaeb5424b2a4f, type: 3}
   m_Name: BombSO
   m_EditorClassIdentifier: 
-  HP: 0
+  HP: 100
   Cost: 80
   TowerPrefab: {fileID: 8660769592232674460, guid: 1aad3cd285d076940bcec49009335545,
     type: 3}
