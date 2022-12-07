@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/EnemyPull.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/SpawnerEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

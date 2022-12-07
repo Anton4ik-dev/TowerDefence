@@ -9,6 +9,7 @@ namespace BattleSystem.BattleActions
         [SerializeField] private BulletSO bulletSO;
         private Transform _target;
         private int _enemyLayer;
+        private bool _isActive = true;
         public void PutTarget(Transform target, int enemyLayer)
         {
             _target = target;
@@ -25,8 +26,10 @@ namespace BattleSystem.BattleActions
         }
         private void OnTriggerEnter(Collider other)
         {
+            if(_isActive == false) return;
             if (_enemyLayer == other.gameObject.layer)
             {
+                _isActive = false;
                 other.gameObject.GetComponent<EnemyController>().GetDamage(bulletSO.Damage);
                 Destroy(gameObject);
             }
