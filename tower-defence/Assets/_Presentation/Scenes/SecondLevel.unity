@@ -321,6 +321,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &95064567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1578834041158848395, guid: 01f1a7e6b3676074f9339dc89ec60750,
+    type: 3}
+  m_PrefabInstance: {fileID: 95064563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe3501a477350a4d894159582922d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &244296937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -865,6 +877,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
         type: 3}
+      propertyPath: sceneManagement
+      value: 
+      objectReference: {fileID: 95064567}
+    - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
+        type: 3}
       propertyPath: wavesEnemies.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1329,6 +1346,7 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   repairButton: {fileID: 0}
   repairText: {fileID: 0}
+  sceneManagement: {fileID: 95064567}
 --- !u!114 &5464369551740812420 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5464369551740812420, guid: 540caf53f8cec974eb3254e220a23432,

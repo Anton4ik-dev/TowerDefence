@@ -13,6 +13,7 @@ namespace _Source.Enemy
     {
         [SerializeField] private List<Transform> positionForSpawn;
         [SerializeField] private List<WaveEnemySo> wavesEnemies;
+        [SerializeField] private SceneManagement sceneManagement;
         private EnemyPull _pull;
         private int _currentCountSpawn;
         private List<int> _currentCountEnemyInWave; 
@@ -28,7 +29,7 @@ namespace _Source.Enemy
         {
             if (_currentWave == wavesEnemies.Count - 1)
             {
-                SceneManagement.OnEndGame.Invoke();
+                sceneManagement.GoodEnd();
                 return;
             }
             _currentWave++;

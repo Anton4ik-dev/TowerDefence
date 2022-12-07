@@ -134,22 +134,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1047695585}
-    - target: {fileID: 215036611, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 380507009, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 380507011, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1047695585}
-    - target: {fileID: 380507011, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyZenitTower
-      objectReference: {fileID: 0}
     - target: {fileID: 383675442, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -303,6 +291,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &95064566 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1578834041158848395, guid: 01f1a7e6b3676074f9339dc89ec60750,
+    type: 3}
+  m_PrefabInstance: {fileID: 95064563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe3501a477350a4d894159582922d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &330766495
@@ -1010,6 +1010,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
         type: 3}
+      propertyPath: sceneManagement
+      value: 
+      objectReference: {fileID: 95064566}
+    - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
+        type: 3}
       propertyPath: wavesEnemies.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -1184,6 +1189,11 @@ PrefabInstance:
       propertyPath: sliderHP
       value: 
       objectReference: {fileID: 828228730}
+    - target: {fileID: 3792056075509304497, guid: 68d7f83e0debe8640813cf782f7fbb7e,
+        type: 3}
+      propertyPath: sceneManagement
+      value: 
+      objectReference: {fileID: 95064566}
     - target: {fileID: 4062668222373678553, guid: 68d7f83e0debe8640813cf782f7fbb7e,
         type: 3}
       propertyPath: m_Name

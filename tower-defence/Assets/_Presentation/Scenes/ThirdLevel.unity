@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.302, g: 324.99048, b: 430.14307, a: 1}
+  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,6 +137,14 @@ PrefabInstance:
     - target: {fileID: 187435022, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BuyFence
+      objectReference: {fileID: 0}
+    - target: {fileID: 215036611, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215036612, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -252
       objectReference: {fileID: 0}
     - target: {fileID: 215036613, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -303,6 +311,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &95064566 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1578834041158848395, guid: 01f1a7e6b3676074f9339dc89ec60750,
+    type: 3}
+  m_PrefabInstance: {fileID: 95064563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abe3501a477350a4d894159582922d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &330766495
@@ -591,6 +611,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 675a6573bdd104a79a6dc46d88e30913, type: 2}
   - {fileID: 11400000, guid: 472b3c9c313d3415eb730436500a398f, type: 2}
   - {fileID: 11400000, guid: 9f7d17bf02f994332994ffc9c6130b26, type: 2}
+  sceneManagement: {fileID: 95064566}
 --- !u!4 &730112797
 Transform:
   m_ObjectHideFlags: 0
@@ -875,12 +896,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerSO: {fileID: 11400000, guid: f63515c4f67f792458ed4b6911f2d32e, type: 2}
   maxLevelText: 
-  sliderHP: {fileID: 0}
+  sliderHP: {fileID: 1856304894}
   towerBuyField: {fileID: 0}
   upgradeButton: {fileID: 0}
   upgradeText: {fileID: 0}
   repairButton: {fileID: 0}
   repairText: {fileID: 0}
+  sceneManagement: {fileID: 95064566}
 --- !u!1 &1542080352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1120,18 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!114 &1856304894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5133818829988730831, guid: 01f1a7e6b3676074f9339dc89ec60750,
+    type: 3}
+  m_PrefabInstance: {fileID: 95064563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4031971331790944968
 PrefabInstance:
   m_ObjectHideFlags: 0

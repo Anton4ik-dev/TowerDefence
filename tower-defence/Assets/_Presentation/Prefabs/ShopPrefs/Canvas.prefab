@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -895.5, y: -14}
+  m_AnchoredPosition: {x: -895.5, y: -2}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &187435024
@@ -151,7 +151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &215036612
 RectTransform:
   m_ObjectHideFlags: 0
@@ -302,7 +302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -895.5, y: -139}
+  m_AnchoredPosition: {x: -895.5, y: -127}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &380507013
@@ -2820,7 +2820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 7173459364886464939}
-  endPanel: {fileID: 7094415826645791444}
+  badEndPanel: {fileID: 7094415826645791444}
+  goodEndPanel: {fileID: 1072915351013152942}
 --- !u!1 &6918562025575398585
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,11 @@
 using UIFlow;
+using UnityEngine;
 
 namespace TowerSystem.TowerActions
 {
     public class BaseAction : TowerDefaultAction
     {
+        [SerializeField] private SceneManagement sceneManagement;
         private void Start()
         {
             HealOnFull();
@@ -11,7 +13,7 @@ namespace TowerSystem.TowerActions
         }
         public override void DestroyTower()
         {
-            SceneManagement.OnEndGame.Invoke();
+            sceneManagement.BadEnd();
         }
         protected override void OnMouseEnter() { }
         protected override void OnMouseExit() { }

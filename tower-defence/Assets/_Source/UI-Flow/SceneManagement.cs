@@ -8,12 +8,11 @@ namespace UIFlow
     public class SceneManagement : MonoBehaviour
     {
         [SerializeField] private Image pausePanel;
-        [SerializeField] private Image endPanel;
-        public static Action OnEndGame;
-        private void Start()
+        [SerializeField] private Image badEndPanel;
+        [SerializeField] private Image goodEndPanel;
+        private void Awake()
         {
             ContinueTime();
-            OnEndGame += End;
         }
         public void LoadMainMenu()
         {
@@ -56,9 +55,14 @@ namespace UIFlow
             pausePanel.gameObject.SetActive(false);
             ContinueTime();
         }
-        public void End()
+        public void GoodEnd()
         {
-            endPanel.gameObject.SetActive(true);
+            goodEndPanel.gameObject.SetActive(true);
+            StopTime();
+        }
+        public void BadEnd()
+        {
+            badEndPanel.gameObject.SetActive(true);
             StopTime();
         }
         private void StopTime()

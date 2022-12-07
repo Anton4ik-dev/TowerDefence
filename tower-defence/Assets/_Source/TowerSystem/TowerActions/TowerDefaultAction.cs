@@ -51,8 +51,8 @@ namespace TowerSystem.TowerActions
         }
         public virtual void DestroyTower()
         {
-            Destroy(gameObject);
             ChangeCellLayer();
+            Destroy(gameObject);
         }
         protected void SetMaxHP()
         {
@@ -80,6 +80,7 @@ namespace TowerSystem.TowerActions
             repairText.text = $"{towerSO.RepairCost}";
 
             _cell = cell;
+            cell.layer = (int)Mathf.Log(towerSO.layerOnSpawn.value, 2);
         }
         private void UpgradeTower()
         {
@@ -87,10 +88,9 @@ namespace TowerSystem.TowerActions
             {
                 if (ResourceService.OnCheckResource.Invoke(towerSO.UpgradeTowerDefaultSO.Cost, towerSO.UpgradeTowerDefaultSO.ResourceForBuy))
                 {
-                    Debug.Log("UPGRADE");
-                    ResourceService.OnTakeResource?.Invoke(towerSO.UpgradeTowerDefaultSO.Cost, towerSO.UpgradeTowerDefaultSO.ResourceForBuy);
-                    SpawnerService.SpawnTower(_cell, towerSO.UpgradeTowerDefaultSO.TowerPrefab, towerSO.layerOnSpawn, _hp);
                     DestroyTower();
+                    ResourceService.OnTakeResource?.Invoke(towerSO.UpgradeTowerDefaultSO.Cost, towerSO.UpgradeTowerDefaultSO.ResourceForBuy);
+                    SpawnerService.SpawnTower(_cell, towerSO.UpgradeTowerDefaultSO.TowerPrefab, _hp);
                 }
             }
         }
@@ -98,7 +98,6 @@ namespace TowerSystem.TowerActions
         {
             if (ResourceService.OnCheckResource.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy) && _hp < towerSO.HP)
             {
-                Debug.Log("REPAIR");
                 ResourceService.OnTakeResource?.Invoke(towerSO.RepairCost, towerSO.ResourceForBuy);
                 HealOnFull();
                 SetHP();
