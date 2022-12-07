@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ShootingTowerSO 1
   m_EditorClassIdentifier: 
   HP: 100
-  Cost: 30
+  Cost: 40
   TowerPrefab: {fileID: 87553939463846425, guid: 6d6ce86f74384b94aa867a7914a1a18c,
     type: 3}
   ResourceForBuy: 0
