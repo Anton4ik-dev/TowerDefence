@@ -1082,6 +1082,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
         type: 3}
+      propertyPath: oil
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
+        type: 3}
+      propertyPath: gold
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
+        type: 3}
       propertyPath: oilText
       value: 
       objectReference: {fileID: 95064564}
@@ -1118,7 +1128,7 @@ PrefabInstance:
     - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
         type: 3}
       propertyPath: wavesEnemies.Array.size
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
         type: 3}
@@ -1136,13 +1146,31 @@ PrefabInstance:
         type: 3}
       propertyPath: wavesEnemies.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 34d0bd07501a04a3ab695c99cbd829e5,
+      objectReference: {fileID: 11400000, guid: 02229f78b581a314ba5ea4e0c148e0e8,
         type: 2}
     - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
         type: 3}
       propertyPath: wavesEnemies.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 4dc9405c808a9455d8df357ccc4c2361,
+      objectReference: {fileID: 11400000, guid: 69ef59ba073c0694f9299eab7f98499a,
+        type: 2}
+    - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
+        type: 3}
+      propertyPath: wavesEnemies.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 01163a81817c2bd47920e702722a9f5f,
+        type: 2}
+    - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
+        type: 3}
+      propertyPath: wavesEnemies.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1d33628eceb1f8e4187e8a1cd3ca36c1,
+        type: 2}
+    - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
+        type: 3}
+      propertyPath: wavesEnemies.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 54627dbf325d6274c9492b2150745f8c,
         type: 2}
     - target: {fileID: 63801675531618244, guid: d0ebbc5493f5c4df5bb40d1c4fe16c3e,
         type: 3}

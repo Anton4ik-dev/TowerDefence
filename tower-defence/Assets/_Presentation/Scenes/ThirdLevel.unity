@@ -867,8 +867,12 @@ MonoBehaviour:
   wavesEnemies:
   - {fileID: 11400000, guid: 472b3c9c313d3415eb730436500a398f, type: 2}
   - {fileID: 11400000, guid: 675a6573bdd104a79a6dc46d88e30913, type: 2}
-  - {fileID: 11400000, guid: 675a6573bdd104a79a6dc46d88e30913, type: 2}
-  - {fileID: 11400000, guid: 472b3c9c313d3415eb730436500a398f, type: 2}
+  - {fileID: 11400000, guid: e35e94eb206359e48a6da75c1f80d6e4, type: 2}
+  - {fileID: 11400000, guid: 841f4a13573508649a848cf756416d97, type: 2}
+  - {fileID: 11400000, guid: 1df939528a82880438223e8996db5cab, type: 2}
+  - {fileID: 11400000, guid: b29a3127c599bc245afb7d5fc371dca5, type: 2}
+  - {fileID: 11400000, guid: 86d969bc5d522ea4ca24f5b688d6d0b2, type: 2}
+  - {fileID: 11400000, guid: 2ff9c48dbdc1538488dbe870c363d5f4, type: 2}
   - {fileID: 11400000, guid: 9f7d17bf02f994332994ffc9c6130b26, type: 2}
   sceneManagement: {fileID: 95064566}
 --- !u!4 &730112797
@@ -1157,6 +1161,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bootstrapper
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
+        type: 3}
+      propertyPath: oil
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
+        type: 3}
+      propertyPath: gold
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 6584583579861001051, guid: cd6bab1d0311fed439033db8ed1d7318,
         type: 3}
