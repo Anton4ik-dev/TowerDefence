@@ -26,6 +26,6 @@ MonoBehaviour:
   UpgradeTowerDefaultSO: {fileID: 11400000, guid: 9aef5f0a9ff8e914f869320cad3b24b5,
     type: 2}
   RepairCost: 7
-  ExtractionTime: 6
-  MinedAmount: 10
+  ExtractionTime: 10
+  MinedAmount: 30
   MinedResource: 0

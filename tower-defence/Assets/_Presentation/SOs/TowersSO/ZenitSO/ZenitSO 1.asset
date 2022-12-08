@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ZenitSO 1
   m_EditorClassIdentifier: 
   HP: 120
-  Cost: 30
+  Cost: 40
   TowerPrefab: {fileID: 1438512716220916043, guid: 9cb82a03ba507ae4891882ac2d419dfe,
     type: 3}
   ResourceForBuy: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Bits: 64
   UpgradeTowerDefaultSO: {fileID: 11400000, guid: 427e0a374253de940976b75408b1fdef,
     type: 2}
-  RepairCost: 10
+  RepairCost: 20
   FireRate: 1
   EnemyLayer:
     serializedVersion: 2
