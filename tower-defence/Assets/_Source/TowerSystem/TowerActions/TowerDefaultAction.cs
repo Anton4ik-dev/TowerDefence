@@ -47,6 +47,7 @@ namespace TowerSystem.TowerActions
                 DestroyTower();
                 return true;
             }
+            sliderHP.gameObject.SetActive(true);
             return false;
         }
         public virtual void DestroyTower()
