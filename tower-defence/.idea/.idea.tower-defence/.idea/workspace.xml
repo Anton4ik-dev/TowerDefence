@@ -7,7 +7,6 @@
     <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/ABaseEnemyAction.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/CrocodileAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileBomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileBomb.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/ThirdLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/ThirdLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/BattleSystem/BattleActoins/Bullet.cs" afterDir="false" />
