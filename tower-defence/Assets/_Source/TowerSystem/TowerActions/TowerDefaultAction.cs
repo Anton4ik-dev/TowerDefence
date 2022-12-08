@@ -110,7 +110,6 @@ namespace TowerSystem.TowerActions
         protected virtual void OnMouseEnter()
         {
             sliderHP.gameObject.SetActive(true);
-            sliderHP.transform.LookAt(Camera.main.transform.position);
         }
         protected virtual void OnMouseExit()
         {
