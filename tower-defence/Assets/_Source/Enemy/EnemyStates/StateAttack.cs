@@ -6,10 +6,10 @@ namespace _Source.Enemy.EnemyStates
     public class StateAttack : IStateEnemy
     {
         private TowerDefaultAction _target;
-        private EnemyController _controller;
+        private ABaseEnemyAction _controller;
         private float _damage;
 
-        public StateAttack(float damage, EnemyController body)
+        public StateAttack(float damage, ABaseEnemyAction body)
         {
             _damage = damage;
             _controller = body;

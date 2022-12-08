@@ -44,7 +44,7 @@ namespace TowerSystem.TowerActions
         {
             for (int i = 0; i < _enemies.Count; i++)
             {
-                _enemies[i].GetComponent<EnemyController>().GetDamage(_bombSO.Damage);
+                _enemies[i].GetComponent<ABaseEnemyAction>().GetDamage(_bombSO.Damage);
             }
             DestroyTower();
         }

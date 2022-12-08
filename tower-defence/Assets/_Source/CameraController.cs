@@ -19,7 +19,6 @@ namespace _Source
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("space");
                 if (_isRotate == false)
                 {
                     transform.DORotate(new Vector3(0, endAngel, 0), speed);

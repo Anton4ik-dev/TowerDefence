@@ -30,7 +30,7 @@ namespace BattleSystem.BattleActions
             if (_enemyLayer == other.gameObject.layer)
             {
                 _isActive = false;
-                other.gameObject.GetComponent<EnemyController>().GetDamage(bulletSO.Damage);
+                other.gameObject.GetComponent<ABaseEnemyAction>().GetDamage(bulletSO.Damage);
                 Destroy(gameObject);
             }
         }
