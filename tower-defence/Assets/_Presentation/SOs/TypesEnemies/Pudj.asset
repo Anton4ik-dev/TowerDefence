@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 150
   isAir: 1
-  speedMove: 0.5
+  speedMove: 0.8
   chanceOfCoinDrop: 5
   setMoney: 50
-  damage: 100
+  damage: 120
   speedAttack: 3
   damageForBase: 100

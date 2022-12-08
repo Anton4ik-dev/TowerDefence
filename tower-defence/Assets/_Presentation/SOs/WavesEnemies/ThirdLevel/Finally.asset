@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Finally
   m_EditorClassIdentifier: 
   parametersEnemies:
-  - enemy: {fileID: 2853293413282694317, guid: baa869c6cc38646ea94a0d9ade96741f, type: 3}
+  - enemy: {fileID: 7256584135287235431, guid: baa869c6cc38646ea94a0d9ade96741f, type: 3}
     count: 7
   timeSpawnEnemy: 3

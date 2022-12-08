@@ -17,6 +17,6 @@ MonoBehaviour:
   speedMove: 1
   chanceOfCoinDrop: 5
   setMoney: 20
-  damage: 25
+  damage: 20
   speedAttack: 1
   damageForBase: 25
