@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8508984391711968028}
   - component: {fileID: 5817691841304585968}
   - component: {fileID: 490796424120781730}
+  - component: {fileID: 5703343626229982994}
   m_Layer: 7
   m_Name: GroundCrocodile
   m_TagString: Untagged
@@ -154,3 +155,23 @@ MonoBehaviour:
   layerBase:
     serializedVersion: 2
     m_Bits: 512
+--- !u!95 &5703343626229982994
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535107710280975859}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 793bfcb9b69301b4a81074011514494f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

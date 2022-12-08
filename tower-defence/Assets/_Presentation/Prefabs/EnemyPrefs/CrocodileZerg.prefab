@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 8672637820123701379}
   - component: {fileID: 8672637820123701376}
   - component: {fileID: 8672637820123701377}
+  - component: {fileID: 2950606951655144373}
   m_Layer: 7
   m_Name: CrocodileZerg
   m_TagString: Untagged
@@ -270,3 +271,23 @@ MonoBehaviour:
   layerBase:
     serializedVersion: 2
     m_Bits: 512
+--- !u!95 &2950606951655144373
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8672637820123701390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9bfeb4f03c7a72d4d867ade5f9072767, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
