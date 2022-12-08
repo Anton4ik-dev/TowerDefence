@@ -30,7 +30,7 @@ namespace TowerSystem.TowerActions
             SetMaxHP();
             Bind(cell);
         }
-        public void Initialize(GameObject cell, float hp)
+        public virtual void Initialize(GameObject cell, float hp)
         {
             _hp = hp + towerSO.HP / 2;
             if (_hp > towerSO.HP)

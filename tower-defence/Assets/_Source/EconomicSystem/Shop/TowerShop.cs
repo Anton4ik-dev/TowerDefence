@@ -30,11 +30,7 @@ namespace EconomicSystem
 
         private void Start()
         {
-            mineCost.text = $"{mineSO.Cost}";
-            shootingTowerCost.text = $"{shootingTowerSO.Cost}";
-            fenceCost.text = $"{fenceSO.Cost}";
-            zenitTowerCost.text = $"{zenitTowerSO.Cost}";
-            bombCost.text = $"{bombSO.Cost}";
+            SetTexts();
         }
 
         public void BuyMine()
@@ -92,6 +88,14 @@ namespace EconomicSystem
             {
                 EnableShop();
             }
+        }
+        private void SetTexts()
+        {
+            mineCost.text = $"{mineSO.Cost}";
+            shootingTowerCost.text = $"{shootingTowerSO.Cost}";
+            fenceCost.text = $"{fenceSO.Cost}";
+            zenitTowerCost.text = $"{zenitTowerSO.Cost}";
+            bombCost.text = $"{bombSO.Cost}";
         }
     }
 }

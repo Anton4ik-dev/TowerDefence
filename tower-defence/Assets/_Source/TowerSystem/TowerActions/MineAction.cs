@@ -11,7 +11,16 @@ namespace TowerSystem.TowerActions
 
         private float _extractionTime;
         private MineSO _mineSO;
-
+        public override void Initialize(GameObject cell)
+        {
+            base.Initialize(cell);
+            DefaultMineInitialize();
+        }
+        public override void Initialize(GameObject cell, float hp)
+        {
+            base.Initialize(cell, hp);
+            DefaultMineInitialize();
+        }
         private void AddOil()
         {
             SetExtractionTimer();
@@ -32,7 +41,7 @@ namespace TowerSystem.TowerActions
             oilAdderButton.gameObject.SetActive(true);
             enabled = false;
         }
-        private void Start()
+        private void DefaultMineInitialize()
         {
             _mineSO = (MineSO)towerSO;
             oilAdderButton.onClick.AddListener(AddOil);

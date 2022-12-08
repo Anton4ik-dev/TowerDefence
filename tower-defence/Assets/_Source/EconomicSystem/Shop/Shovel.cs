@@ -7,10 +7,10 @@ namespace EconomicSystem
     {
         [SerializeField] private LayerMask towerLayer;
         [SerializeField] private TowerShop towerShop;
-        private int _layerMask;
+        private int _towerLayerMask;
         private void Awake()
         {
-            _layerMask = 1 << (int)Mathf.Log(towerLayer.value, 2);
+            _towerLayerMask = 1 << (int)Mathf.Log(towerLayer.value, 2);
         }
         private void Update()
         {
@@ -18,7 +18,7 @@ namespace EconomicSystem
             {
                 RaycastHit hit;
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity, _layerMask))
+                if (Physics.Raycast(ray, out hit, Mathf.Infinity, _towerLayerMask))
                 {
                     TowerDefaultAction towerAction = hit.transform.gameObject.GetComponent<TowerDefaultAction>();
                     towerAction.DestroyTower();

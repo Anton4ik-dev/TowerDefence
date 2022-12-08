@@ -6,22 +6,22 @@ namespace TowerSystem.TowerActions
     public class ShootingTowerTrigger : MonoBehaviour
     {
         protected ShootingTowerAction _tower;
-        protected int _layerMask;
+        protected int _enemyLayerMask;
         public void Initialize(ShootingTowerAction tower, int mask)
         {
             _tower = tower;
-            _layerMask = mask;
+            _enemyLayerMask = mask;
         }
         protected virtual void OnTriggerEnter(Collider other)
         {
-            if (_layerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir == false)
+            if (_enemyLayerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir == false)
             {
                 _tower.AddEnemy(other.gameObject);
             }
         }
         protected virtual void OnTriggerExit(Collider other)
         {
-            if (_layerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir == false)
+            if (_enemyLayerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir == false)
             {
                 _tower.RemoveEnemy(other.gameObject);
             }

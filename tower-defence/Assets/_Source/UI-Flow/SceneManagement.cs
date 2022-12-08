@@ -7,18 +7,26 @@ namespace UIFlow
 {
     public class SceneManagement : MonoBehaviour
     {
-        [SerializeField] private Image pausePanel;
         [SerializeField] private Image badEndPanel;
         [SerializeField] private Image goodEndPanel;
+        [SerializeField] private Image settings;
+        [SerializeField] private Image pausePanel;
+        [SerializeField] private Image levelSelector;
+        [SerializeField] private Image tutorialWindow;
+        private static bool isTutorial = true;
         private void Awake()
         {
-            ContinueTime();
+            if(tutorialWindow != null)
+            {
+                if (isTutorial)
+                {
+                    StopTime();
+                    tutorialWindow.gameObject.SetActive(true);
+                    isTutorial = false;
+                }
+            }
         }
-        public void LoadMainMenu()
-        {
-            SceneManager.LoadScene(0);
-            ContinueTime();
-        }
+        
         public void Restart()
         {
             ContinueTime();
@@ -29,28 +37,45 @@ namespace UIFlow
             ContinueTime();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
-        public void LoadLevelSelector()
+        public void LoadMainMenu()
         {
-            SceneManager.LoadScene(1);
+            ContinueTime();
+            SceneManager.LoadScene(0);
         }
         public void LoadFirstLevel()
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
         public void LoadSecondLevel()
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
         }
         public void LoadThirdLevel()
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(3);
         }
-        public void Pause()
+        public void ToSettings()
+        {
+            settings.gameObject.SetActive(true);
+        }
+        public void FromSettings()
+        {
+            settings.gameObject.SetActive(false);
+        }
+        public void ToLevelSelector()
+        {
+            levelSelector.gameObject.SetActive(true);
+        }
+        public void FromLevelSelector()
+        {
+            levelSelector.gameObject.SetActive(false);
+        }
+        public void ToPause()
         {
             pausePanel.gameObject.SetActive(true);
             StopTime();
         }
-        public void Back()
+        public void FromPause()
         {
             pausePanel.gameObject.SetActive(false);
             ContinueTime();
@@ -65,13 +90,13 @@ namespace UIFlow
             badEndPanel.gameObject.SetActive(true);
             StopTime();
         }
+        public void ContinueTime()
+        {
+            Time.timeScale = 1;
+        }
         private void StopTime()
         {
             Time.timeScale = 0;
-        }
-        private void ContinueTime()
-        {
-            Time.timeScale = 1;
         }
     }
 }

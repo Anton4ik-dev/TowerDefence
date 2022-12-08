@@ -9,12 +9,12 @@ namespace TowerSystem.TowerActions
     {
         private BombSO _bombSO;
         private List<GameObject> _enemies;
-        private int _layerMask;
+        private int _enemyLayerMask;
         private float _explosionCountdown;
         public override void Initialize(GameObject cell)
         {
             _bombSO = (BombSO)towerSO;
-            _layerMask = (int)Mathf.Log(_bombSO.EnemyLayer.value, 2);
+            _enemyLayerMask = (int)Mathf.Log(_bombSO.EnemyLayer.value, 2);
             _explosionCountdown = _bombSO.ExplosionTime;
             _enemies = new List<GameObject>();
             _cell = cell;
@@ -55,14 +55,14 @@ namespace TowerSystem.TowerActions
         }
         private void OnTriggerEnter(Collider other)
         {
-            if (_layerMask == other.gameObject.layer)
+            if (_enemyLayerMask == other.gameObject.layer)
             {
                 AddEnemy(other.gameObject);
             }
         }
         private void OnTriggerExit(Collider other)
         {
-            if (_layerMask == other.gameObject.layer)
+            if (_enemyLayerMask == other.gameObject.layer)
             {
                 RemoveEnemy(other.gameObject);
             }

@@ -7,14 +7,14 @@ namespace TowerSystem.TowerActions
     {
         protected override void OnTriggerEnter(Collider other)
         {
-            if (_layerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir)
+            if (_enemyLayerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir)
             {
                 _tower.AddEnemy(other.gameObject);
             }
         }
         protected override void OnTriggerExit(Collider other)
         {
-            if (_layerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir)
+            if (_enemyLayerMask == other.gameObject.layer && other.gameObject.GetComponent<EnemyController>().GetTypeEnemy.isAir)
             {
                 _tower.RemoveEnemy(other.gameObject);
             }
