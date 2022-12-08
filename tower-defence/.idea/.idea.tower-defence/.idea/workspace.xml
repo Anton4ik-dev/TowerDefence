@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="" />
+    <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Fance/fencelvl1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Fance/fencelvl1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Fance/fencelvl2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Fance/fencelvl2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Mine/towerFarm1lvl Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Mine/towerFarm1lvl Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Mine/towerFarm2lvl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Mine/towerFarm2lvl.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Mine/towerFarm3lvl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Mine/towerFarm3lvl.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower/towershooter1lvl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower/towershooter1lvl.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower/towershooter2lvl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/ShootingTower/towershooter2lvl.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Zenit/towerZenit1lvl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Zenit/towerZenit1lvl.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Zenit/towerZenit2lvl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/TowerPrefs/Zenit/towerZenit2lvl.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/ThirdLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/ThirdLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/BombCrocodileAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/BombCrocodileAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/TowerDefaultAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/TowerDefaultAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +28,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Source/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/EconomicSystem/Coin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Source/Enemy/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/Enemy/BombCrocodileAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/Enemy/CrocodileAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Source/Enemy/RangeBombEnemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Source/TowerSystem/TowerActions/ShootingTowerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../by-place_protorype/by-place/Assets/_Source/Moving Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../by-place_protorype/by-place/Assets/_Source/Moving Player/PlayerManager.cs" root0="SKIP_HIGHLIGHTING" />

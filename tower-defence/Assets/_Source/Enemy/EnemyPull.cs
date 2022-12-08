@@ -57,27 +57,12 @@ namespace _Source.Enemy.EnemyStates
         public void AddNewEnemyInPull(GameObject enemy, TypeEnemySo typeEnemy)
         {
             _enemiesInPull[typeEnemy].Add(enemy);
-            enemy.GetComponent<EnemyController>().SetEnemyPull(this);
+            enemy.GetComponent<ABaseEnemyAction>().SetEnemyPull(this);
             enemy.SetActive(false);
         }
 
         public void MoveEnemyToPull(GameObject enemy, TypeEnemySo typeEnemy)
         {
-            // try
-            // {
-            //     _activeEnemies[typeEnemy].Remove(enemy);
-            //     _enemiesInPull[typeEnemy].Add(enemy);
-            //     bool finish = true;
-            //     foreach (var typeEnemies  in _typesEnemy)
-            //     {
-            //         if (_activeEnemies[typeEnemies].Count != 0) finish = false;
-            //     }
-            //     if(finish) _spawnerEnemy.SpawnNextWave();
-            // }
-            // catch (Exception e)
-            // {
-            //     Debug.Log(e);
-            // }
             _activeEnemies[typeEnemy].Remove(enemy);
             _enemiesInPull[typeEnemy].Add(enemy);
             bool finish = true;

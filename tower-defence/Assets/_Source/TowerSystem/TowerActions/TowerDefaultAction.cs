@@ -1,3 +1,4 @@
+using DG.Tweening;
 using EconomicSystem;
 using Services;
 using TMPro;
@@ -14,6 +15,7 @@ namespace TowerSystem.TowerActions
         [SerializeField] private string maxLevelText;
 
         [Header("TowerUI")]
+        [SerializeField] private Transform canvas;
         [SerializeField] private Slider sliderHP;
         [SerializeField] private Image towerBuyField;
         [SerializeField] private Button upgradeButton;
@@ -110,6 +112,7 @@ namespace TowerSystem.TowerActions
         protected virtual void OnMouseEnter()
         {
             sliderHP.gameObject.SetActive(true);
+            canvas.DOLookAt(Camera.main.transform.position, 0);
         }
         protected virtual void OnMouseExit()
         {

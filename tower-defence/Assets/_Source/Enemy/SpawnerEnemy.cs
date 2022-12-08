@@ -43,7 +43,7 @@ namespace _Source.Enemy
             {
                 _currentCountEnemyInWave.Add(parameter.count);
                 _currentCountSpawn += parameter.count;
-                _pull.AddNewTypeEnemy(parameter.enemy.GetComponent<EnemyController>().GetTypeEnemy);
+                _pull.AddNewTypeEnemy(parameter.enemy.GetComponent<ABaseEnemyAction>().GetTypeEnemy);
             }
             DistributionOfEnemies();
         }
@@ -61,7 +61,7 @@ namespace _Source.Enemy
                 DistributionOfEnemies();
             }
             var enemy = wavesEnemies[_currentWave].parametersEnemies[type].enemy;
-            var controllerEnemy = enemy.GetComponent<EnemyController>();
+            var controllerEnemy = enemy.GetComponent<ABaseEnemyAction>();
             if (_pull.CheckEnemy(controllerEnemy.GetTypeEnemy))
             {
                 _pull.ActivateEnemy(positionForSpawn[place], controllerEnemy.GetTypeEnemy);
