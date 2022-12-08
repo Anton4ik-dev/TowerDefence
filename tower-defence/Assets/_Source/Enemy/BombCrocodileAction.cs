@@ -28,20 +28,18 @@ namespace _Source.Enemy
 
         protected override void KillEnemy()
         {
-            gameObject.SetActive(false);
+            IsDead = true;
+            animation.PlayDead();
             foreach (var target in _towersInRange)
             {
                 target.GetDamage(typeEnemy.damage);
             }
-            ChangeStartState();
             var createCoin = Random.Range(0, 10) <= typeEnemy.chanceOfCoinDrop;
             if (createCoin)
             {
                 var coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 coin.GetComponent<Coin>().SetPrice(typeEnemy.setMoney);
             }
-            ResetHp();
-            Pull.MoveEnemyToPull(this.gameObject, typeEnemy);
         }
 
         private void OnTriggerEnter(Collider other)

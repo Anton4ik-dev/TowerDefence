@@ -13,12 +13,14 @@ namespace _Source.Enemy
         [SerializeField] protected Vector3 vectorMoving;
         [SerializeField] protected LayerMask layerTower;
         [SerializeField] protected LayerMask layerBase;
+        [SerializeField] protected EnemyAnimationController animation;
         
         public TypeEnemySo GetTypeEnemy => typeEnemy;
         protected EnemyStateMachine StateMachine;
         protected bool IsMoving = true;
-        protected float CurrentHp;
-        protected EnemyPull Pull;
+        protected bool IsDead;
+        private float _currentHp;
+        private EnemyPull _pull;
         
         private void Awake()
         {
@@ -31,25 +33,36 @@ namespace _Source.Enemy
         {
             
         }
+
+        public void DeadEnemy()
+        {
+            this.gameObject.SetActive(false);
+            IsDead = false;
+            StopAttack();
+            ResetHp();
+            _pull.MoveEnemyToPull(this.gameObject, typeEnemy);
+        }
         protected void ResetHp()
         {
-            CurrentHp = typeEnemy.hp;
+            _currentHp = typeEnemy.hp;
         }
         public void SetEnemyPull(EnemyPull pull)
         {
-            Pull = pull;
+            _pull = pull;
         }
 
         public void GetDamage(float damage)
         {
-            CurrentHp -= damage;
-            if (CurrentHp <= 0)
+            if(IsDead) return;
+            _currentHp -= damage;
+            if (_currentHp <= 0)
             {
                 KillEnemy();
             }
         }
         public void StopAttack()
         {
+            animation.PlayIdle();
             IsMoving = true;
             StateMachine.SwitchStateMoving();
         }
@@ -64,6 +77,7 @@ namespace _Source.Enemy
         {
             
         }
+        
 
         protected virtual void KillEnemy()
         {
@@ -76,7 +90,7 @@ namespace _Source.Enemy
         }
         private void FixedUpdate()
         {
-            if(IsMoving) StateMachine.Update();
+            if(IsMoving & IsDead == false) StateMachine.Update();
         }
     }
 }

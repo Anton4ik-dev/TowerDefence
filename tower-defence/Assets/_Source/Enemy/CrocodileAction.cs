@@ -14,16 +14,14 @@ namespace _Source.Enemy
 
         protected override void KillEnemy()
         {
-            StopAttack();
-            gameObject.SetActive(false);
+            animation.PlayDead();
+            IsDead = true;
             var createCoin = Random.Range(0, 10) <= typeEnemy.chanceOfCoinDrop;
             if (createCoin)
             {
                 var coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
                 coin.GetComponent<Coin>().SetPrice(typeEnemy.setMoney);
             }
-            ResetHp();
-            Pull.MoveEnemyToPull(this.gameObject, typeEnemy);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -32,6 +30,7 @@ namespace _Source.Enemy
             if ((layerTower & 1 << obj.layer) == 1 << obj.layer)
             {
                 StopMoving(obj.GetComponent<TowerDefaultAction>());
+                animation.PlayAttack();
             }
 
             if ((layerBase & 1 << obj.layer) == 1 << obj.layer)
