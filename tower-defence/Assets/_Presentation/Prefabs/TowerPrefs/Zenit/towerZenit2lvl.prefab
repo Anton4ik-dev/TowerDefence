@@ -506,7 +506,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerSO: {fileID: 11400000, guid: 427e0a374253de940976b75408b1fdef, type: 2}
   maxLevelText: Max
-  canvas: {fileID: 5397111362154323150}
   sliderHP: {fileID: 5809439489023437186}
   towerBuyField: {fileID: 432045965222239617}
   upgradeButton: {fileID: 8392224397385898769}
