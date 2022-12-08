@@ -47,7 +47,7 @@ namespace _Source.Enemy
         private void OnTriggerEnter(Collider other)
         {
             var obj = other.gameObject;
-            if ((layerBase & 1 << obj.layer) == 1 << obj.layer)
+            if ((layerBase & 1 << obj.layer) == 1 << obj.layer || (layerTower & 1 << obj.layer) == 1 << obj.layer)
             {
                 KillEnemy();
             }
