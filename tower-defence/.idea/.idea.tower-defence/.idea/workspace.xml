@@ -6,46 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="daf8bdf1-4a3b-4ead-9456-e05a353475a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tower-defence/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AirCrocodile.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AirCrocodile.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AirCrocodile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AirCrocodile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AirCrocodile.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AirCrocodile.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimationAir.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimationAir.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimationBomb.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimationBomb.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimationZerg.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/AttackAnimationZerg.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/BombActivate.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/BombActivate.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileBomb.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileBomb.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileBomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileBomb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileZerg.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileZerg.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileZerg.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/CrocodileZerg.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimation.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimation.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimationAir.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimationAir.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimationBomb.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimationBomb.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimationZerg.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/DeathAnimationZerg.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/GroundCrocodile.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/GroundCrocodile.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/GroundCrocodile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/GroundCrocodile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/Sphere 1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/Sphere 1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/Sphere.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Prefabs/EnemyPrefs/Sphere.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Presentation/Scenes/FirstLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Presentation/Scenes/FirstLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/ABaseEnemyAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/ABaseEnemyAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/BombCrocodileAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/BombCrocodileAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Source/Enemy/CrocodileAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Source/Enemy/CrocodileAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +90,7 @@
       <workItem from="1670338707761" duration="677000" />
       <workItem from="1670435066350" duration="411000" />
       <workItem from="1670524163668" duration="2440000" />
-      <workItem from="1670528137725" duration="3869000" />
+      <workItem from="1670528137725" duration="4461000" />
     </task>
     <servers />
   </component>
