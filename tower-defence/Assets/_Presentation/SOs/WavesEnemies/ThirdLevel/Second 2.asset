@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1093b2b5c9549438686f850e7339aee8, type: 3}
-  m_Name: Second
+  m_Name: Second 2
   m_EditorClassIdentifier: 
   parametersEnemies:
-  - enemy: {fileID: 996798940715699432, guid: df1554f031c834f69802fc9dffc25e9d, type: 3}
-    count: 3
-  timeSpawnEnemy: 2
+  - enemy: {fileID: 2853293413282694317, guid: baa869c6cc38646ea94a0d9ade96741f, type: 3}
+    count: 1
+  timeSpawnEnemy: 3

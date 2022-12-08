@@ -14,9 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parametersEnemies:
   - enemy: {fileID: 996798940715699432, guid: df1554f031c834f69802fc9dffc25e9d, type: 3}
-    count: 20
-  - enemy: {fileID: 535107710280975859, guid: ddadac7095c5a4818bbac43a899f4d4e, type: 3}
     count: 15
-  - enemy: {fileID: 8672637820123701390, guid: 09664d6295480483aa774f88f9ffacb9, type: 3}
-    count: 5
-  timeSpawnEnemy: 2
+  timeSpawnEnemy: 2.5

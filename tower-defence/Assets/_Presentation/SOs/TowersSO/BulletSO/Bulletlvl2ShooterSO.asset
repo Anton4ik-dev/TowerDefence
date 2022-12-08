@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bulletlvl2ShooterSO
   m_EditorClassIdentifier: 
   Damage: 30
-  Speed: 4
+  Speed: 3
