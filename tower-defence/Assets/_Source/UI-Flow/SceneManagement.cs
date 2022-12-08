@@ -1,3 +1,4 @@
+using _Source.Enemy;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,6 +14,7 @@ namespace UIFlow
         [SerializeField] private Image pausePanel;
         [SerializeField] private Image levelSelector;
         [SerializeField] private Image tutorialWindow;
+        [SerializeField] private SpawnerEnemy spawnerEnemy;
         private static bool isTutorial = true;
         private void Awake()
         {
@@ -20,13 +22,17 @@ namespace UIFlow
             {
                 if (isTutorial)
                 {
-                    StopTime();
                     tutorialWindow.gameObject.SetActive(true);
-                    isTutorial = false;
+                    spawnerEnemy.enabled = false;
                 }
             }
         }
-        
+        public void LeaveTutorial()
+        {
+            tutorialWindow.gameObject.SetActive(false);
+            spawnerEnemy.enabled = true;
+            isTutorial = false;
+        }
         public void Restart()
         {
             ContinueTime();
@@ -90,7 +96,7 @@ namespace UIFlow
             badEndPanel.gameObject.SetActive(true);
             StopTime();
         }
-        public void ContinueTime()
+        private void ContinueTime()
         {
             Time.timeScale = 1;
         }

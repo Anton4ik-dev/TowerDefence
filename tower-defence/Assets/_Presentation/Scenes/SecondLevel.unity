@@ -158,6 +158,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1047695585}
+    - target: {fileID: 930350401, guid: 01f1a7e6b3676074f9339dc89ec60750, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 700966182516218053, guid: 01f1a7e6b3676074f9339dc89ec60750,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -193,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 455.96118
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578834041158848395, guid: 01f1a7e6b3676074f9339dc89ec60750,
+        type: 3}
+      propertyPath: tutorialWindow
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1599747559487932412, guid: 01f1a7e6b3676074f9339dc89ec60750,
         type: 3}
