@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BombSO
   m_EditorClassIdentifier: 
   HP: 100
-  Cost: 70
+  Cost: 80
   TowerPrefab: {fileID: 8660769592232674460, guid: 1aad3cd285d076940bcec49009335545,
     type: 3}
   ResourceForBuy: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   UpgradeTowerDefaultSO: {fileID: 0}
   RepairCost: 0
   ExplosionTime: 3
-  Damage: 100
+  Damage: 150
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FanceSO 1
   m_EditorClassIdentifier: 
   HP: 300
-  Cost: 35
+  Cost: 50
   TowerPrefab: {fileID: 2398348768124821382, guid: 29fab886ecea8b0459e9265b275651c9,
     type: 3}
   ResourceForBuy: 0
@@ -25,4 +25,4 @@ MonoBehaviour:
     m_Bits: 64
   UpgradeTowerDefaultSO: {fileID: 11400000, guid: dfc626a5a0e2121498ae5528f4f6b48a,
     type: 2}
-  RepairCost: 30
+  RepairCost: 10

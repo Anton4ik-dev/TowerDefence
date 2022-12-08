@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Bits: 64
   UpgradeTowerDefaultSO: {fileID: 11400000, guid: 0db27c931ccd8974ea6ab3182075ddac,
     type: 2}
-  RepairCost: 20
+  RepairCost: 10
   FireRate: 1
   EnemyLayer:
     serializedVersion: 2

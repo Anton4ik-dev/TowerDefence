@@ -24,7 +24,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   UpgradeTowerDefaultSO: {fileID: 0}
-  RepairCost: 20
-  ExtractionTime: 10
-  MinedAmount: 40
+  RepairCost: 10
+  ExtractionTime: 6
+  MinedAmount: 15
   MinedResource: 0
